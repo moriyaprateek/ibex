@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May  4 12:40:03 2021
+# Process ID: 5851
+# Current directory: /home/next/Desktop/ibex
+# Command line: vivado
+# Log file: /home/next/Desktop/ibex/vivado.log
+# Journal file: /home/next/Desktop/ibex/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project project_1 /home/next/Desktop/ibex/project_1 -part xc7a35tcpg236-1
+add_files {/home/next/Desktop/ibex/rtl/ibex_compressed_decoder.sv /home/next/Desktop/ibex/rtl/ibex_counter.sv /home/next/Desktop/ibex/rtl/ibex_alu.sv /home/next/Desktop/ibex/rtl/ibex_load_store_unit.sv /home/next/Desktop/ibex/rtl/ibex_ex_block.sv /home/next/Desktop/ibex/rtl/ibex_fetch_fifo.sv /home/next/Desktop/ibex/rtl/ibex_lockstep.sv /home/next/Desktop/ibex/rtl/ibex_controller.sv /home/next/Desktop/ibex/rtl/ibex_pkg.sv /home/next/Desktop/ibex/rtl/ibex_dummy_instr.sv /home/next/Desktop/ibex/rtl/ibex_top_tracing.sv /home/next/Desktop/ibex/rtl/ibex_core.sv /home/next/Desktop/ibex/rtl/ibex_branch_predict.sv /home/next/Desktop/ibex/rtl/ibex_register_file_latch.sv /home/next/Desktop/ibex/rtl/ibex_pmp.sv /home/next/Desktop/ibex/rtl/ibex_register_file_fpga.sv /home/next/Desktop/ibex/rtl/ibex_multdiv_slow.sv /home/next/Desktop/ibex/rtl/ibex_wb_stage.sv /home/next/Desktop/ibex/rtl/ibex_multdiv_fast.sv /home/next/Desktop/ibex/rtl/ibex_tracer_pkg.sv /home/next/Desktop/ibex/rtl/ibex_tracer.sv /home/next/Desktop/ibex/rtl/ibex_if_stage.sv /home/next/Desktop/ibex/rtl/ibex_decoder.sv /home/next/Desktop/ibex/rtl/ibex_top.sv /home/next/Desktop/ibex/rtl/ibex_prefetch_buffer.sv /home/next/Desktop/ibex/rtl/ibex_register_file_ff.sv /home/next/Desktop/ibex/rtl/ibex_cs_registers.sv /home/next/Desktop/ibex/rtl/ibex_icache.sv /home/next/Desktop/ibex/rtl/ibex_csr.sv /home/next/Desktop/ibex/rtl/ibex_id_stage.sv /home/next/Desktop/ibex/rtl/custom_module.sv}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+add_files -norecurse {/home/next/Desktop/ibex/rtl/ibex_compressed_decoder.sv /home/next/Desktop/ibex/rtl/ibex_counter.sv /home/next/Desktop/ibex/rtl/ibex_alu.sv /home/next/Desktop/ibex/rtl/ibex_ex_block.sv /home/next/Desktop/ibex/rtl/ibex_load_store_unit.sv /home/next/Desktop/ibex/rtl/ibex_fetch_fifo.sv /home/next/Desktop/ibex/rtl/ibex_lockstep.sv /home/next/Desktop/ibex/rtl/ibex_controller.sv /home/next/Desktop/ibex/rtl/ibex_pkg.sv /home/next/Desktop/ibex/rtl/ibex_dummy_instr.sv /home/next/Desktop/ibex/rtl/ibex_top_tracing.sv /home/next/Desktop/ibex/rtl/ibex_branch_predict.sv /home/next/Desktop/ibex/rtl/ibex_core.sv /home/next/Desktop/ibex/rtl/ibex_register_file_latch.sv /home/next/Desktop/ibex/rtl/ibex_pmp.sv /home/next/Desktop/ibex/rtl/ibex_register_file_fpga.sv /home/next/Desktop/ibex/rtl/ibex_multdiv_slow.sv /home/next/Desktop/ibex/rtl/ibex_wb_stage.sv /home/next/Desktop/ibex/rtl/ibex_multdiv_fast.sv /home/next/Desktop/ibex/rtl/ibex_tracer_pkg.sv /home/next/Desktop/ibex/rtl/ibex_if_stage.sv /home/next/Desktop/ibex/rtl/ibex_tracer.sv /home/next/Desktop/ibex/rtl/ibex_decoder.sv /home/next/Desktop/ibex/rtl/ibex_top.sv /home/next/Desktop/ibex/rtl/ibex_prefetch_buffer.sv /home/next/Desktop/ibex/rtl/ibex_register_file_ff.sv /home/next/Desktop/ibex/rtl/ibex_cs_registers.sv /home/next/Desktop/ibex/rtl/ibex_icache.sv /home/next/Desktop/ibex/rtl/ibex_csr.sv /home/next/Desktop/ibex/rtl/custom_module.sv /home/next/Desktop/ibex/rtl/ibex_id_stage.sv}
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1

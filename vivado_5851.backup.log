@@ -1,0 +1,208 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May  4 12:40:03 2021
+# Process ID: 5851
+# Current directory: /home/next/Desktop/ibex
+# Command line: vivado
+# Log file: /home/next/Desktop/ibex/vivado.log
+# Journal file: /home/next/Desktop/ibex/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project project_1 /home/next/Desktop/ibex/project_1 -part xc7a35tcpg236-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/next/Desktop/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 7333.867 ; gain = 53.035 ; free physical = 1088 ; free virtual = 4764
+add_files {/home/next/Desktop/ibex/rtl/ibex_compressed_decoder.sv /home/next/Desktop/ibex/rtl/ibex_counter.sv /home/next/Desktop/ibex/rtl/ibex_alu.sv /home/next/Desktop/ibex/rtl/ibex_load_store_unit.sv /home/next/Desktop/ibex/rtl/ibex_ex_block.sv /home/next/Desktop/ibex/rtl/ibex_fetch_fifo.sv /home/next/Desktop/ibex/rtl/ibex_lockstep.sv /home/next/Desktop/ibex/rtl/ibex_controller.sv /home/next/Desktop/ibex/rtl/ibex_pkg.sv /home/next/Desktop/ibex/rtl/ibex_dummy_instr.sv /home/next/Desktop/ibex/rtl/ibex_top_tracing.sv /home/next/Desktop/ibex/rtl/ibex_core.sv /home/next/Desktop/ibex/rtl/ibex_branch_predict.sv /home/next/Desktop/ibex/rtl/ibex_register_file_latch.sv /home/next/Desktop/ibex/rtl/ibex_pmp.sv /home/next/Desktop/ibex/rtl/ibex_register_file_fpga.sv /home/next/Desktop/ibex/rtl/ibex_multdiv_slow.sv /home/next/Desktop/ibex/rtl/ibex_wb_stage.sv /home/next/Desktop/ibex/rtl/ibex_multdiv_fast.sv /home/next/Desktop/ibex/rtl/ibex_tracer_pkg.sv /home/next/Desktop/ibex/rtl/ibex_tracer.sv /home/next/Desktop/ibex/rtl/ibex_if_stage.sv /home/next/Desktop/ibex/rtl/ibex_decoder.sv /home/next/Desktop/ibex/rtl/ibex_top.sv /home/next/Desktop/ibex/rtl/ibex_prefetch_buffer.sv /home/next/Desktop/ibex/rtl/ibex_register_file_ff.sv /home/next/Desktop/ibex/rtl/ibex_cs_registers.sv /home/next/Desktop/ibex/rtl/ibex_icache.sv /home/next/Desktop/ibex/rtl/ibex_csr.sv /home/next/Desktop/ibex/rtl/ibex_id_stage.sv /home/next/Desktop/ibex/rtl/custom_module.sv}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 2
+CRITICAL WARNING: [HDL 9-3952] use of undefined macro 'ASSERT_IF' [/home/next/Desktop/ibex/rtl/ibex_branch_predict.sv:91]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_branch_predict.sv:91]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_branch_predict.sv:91]
+CRITICAL WARNING: [HDL 9-3952] use of undefined macro 'ASSERT_KNOWN' [/home/next/Desktop/ibex/rtl/ibex_compressed_decoder.sv:286]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_compressed_decoder.sv:286]
+CRITICAL WARNING: [HDL 9-3952] use of undefined macro 'ASSERT' [/home/next/Desktop/ibex/rtl/ibex_compressed_decoder.sv:289]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_compressed_decoder.sv:299]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_controller.sv:300]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_controller.sv:306]
+CRITICAL WARNING: [HDL 9-3952] use of undefined macro 'DV_FCOV_SIGNAL' [/home/next/Desktop/ibex/rtl/ibex_controller.sv:851]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_controller.sv:851]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_controller.sv:851]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_controller.sv:853]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_controller.sv:855]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_controller.sv:856]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "&". [/home/next/Desktop/ibex/rtl/ibex_controller.sv:857]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_controller.sv:868]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_core.sv:1045]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_core.sv:1050]
+CRITICAL WARNING: [HDL 9-3952] use of undefined macro 'ASSERT_KNOWN_IF' [/home/next/Desktop/ibex/rtl/ibex_core.sv:1051]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "csr_wdata_int". [/home/next/Desktop/ibex/rtl/ibex_core.sv:1051]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [/home/next/Desktop/ibex/rtl/ibex_core.sv:1051]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "end". [/home/next/Desktop/ibex/rtl/ibex_core.sv:1082]
+CRITICAL WARNING: [HDL 9-3952] use of undefined macro 'ASSERT_INIT' [/home/next/Desktop/ibex/rtl/ibex_core.sv:1437]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_core.sv:1437]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_cs_registers.sv:1505]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_csr.sv:55]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_decoder.sv:1188]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_fetch_fifo.sv:243]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_icache.sv:1057]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:365]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:370]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:393]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:400]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:764]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:883]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:965]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1033]
+CRITICAL WARNING: [HDL 9-3952] use of undefined macro 'DV_FCOV_SIGNAL_GEN_IF' [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1087]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1087]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1088]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "&". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1090]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "&". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1092]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1099]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1104]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1105]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1109]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1114]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "&&". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1122]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "&&". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1126]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "&&". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1130]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1134]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_if_stage.sv:526]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_if_stage.sv:546]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_if_stage.sv:555]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_if_stage.sv:642]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "==". [/home/next/Desktop/ibex/rtl/ibex_if_stage.sv:647]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_load_store_unit.sv:502]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_load_store_unit.sv:502]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_load_store_unit.sv:503]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_load_store_unit.sv:516]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_multdiv_fast.sv:114]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_multdiv_fast.sv:255]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_multdiv_fast.sv:373]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_multdiv_fast.sv:522]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_multdiv_fast.sv:523]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_multdiv_slow.sv:364]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_multdiv_slow.sv:366]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "!". [/home/next/Desktop/ibex/rtl/ibex_multdiv_slow.sv:366]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_top.sv:752]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_wb_stage.sv:176]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "wb_valid_q". [/home/next/Desktop/ibex/rtl/ibex_wb_stage.sv:176]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [/home/next/Desktop/ibex/rtl/ibex_wb_stage.sv:176]
+[Tue May  4 12:42:41 2021] Launched synth_1...
+Run output will be captured here: /home/next/Desktop/ibex/project_1/project_1.runs/synth_1/runme.log
+add_files -norecurse {/home/next/Desktop/ibex/rtl/ibex_compressed_decoder.sv /home/next/Desktop/ibex/rtl/ibex_counter.sv /home/next/Desktop/ibex/rtl/ibex_alu.sv /home/next/Desktop/ibex/rtl/ibex_ex_block.sv /home/next/Desktop/ibex/rtl/ibex_load_store_unit.sv /home/next/Desktop/ibex/rtl/ibex_fetch_fifo.sv /home/next/Desktop/ibex/rtl/ibex_lockstep.sv /home/next/Desktop/ibex/rtl/ibex_controller.sv /home/next/Desktop/ibex/rtl/ibex_pkg.sv /home/next/Desktop/ibex/rtl/ibex_dummy_instr.sv /home/next/Desktop/ibex/rtl/ibex_top_tracing.sv /home/next/Desktop/ibex/rtl/ibex_branch_predict.sv /home/next/Desktop/ibex/rtl/ibex_core.sv /home/next/Desktop/ibex/rtl/ibex_register_file_latch.sv /home/next/Desktop/ibex/rtl/ibex_pmp.sv /home/next/Desktop/ibex/rtl/ibex_register_file_fpga.sv /home/next/Desktop/ibex/rtl/ibex_multdiv_slow.sv /home/next/Desktop/ibex/rtl/ibex_wb_stage.sv /home/next/Desktop/ibex/rtl/ibex_multdiv_fast.sv /home/next/Desktop/ibex/rtl/ibex_tracer_pkg.sv /home/next/Desktop/ibex/rtl/ibex_if_stage.sv /home/next/Desktop/ibex/rtl/ibex_tracer.sv /home/next/Desktop/ibex/rtl/ibex_decoder.sv /home/next/Desktop/ibex/rtl/ibex_top.sv /home/next/Desktop/ibex/rtl/ibex_prefetch_buffer.sv /home/next/Desktop/ibex/rtl/ibex_register_file_ff.sv /home/next/Desktop/ibex/rtl/ibex_cs_registers.sv /home/next/Desktop/ibex/rtl/ibex_icache.sv /home/next/Desktop/ibex/rtl/ibex_csr.sv /home/next/Desktop/ibex/rtl/custom_module.sv /home/next/Desktop/ibex/rtl/ibex_id_stage.sv}
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_compressed_decoder.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_counter.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_alu.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_ex_block.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_load_store_unit.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_fetch_fifo.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_lockstep.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_controller.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_pkg.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_dummy_instr.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_top_tracing.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_branch_predict.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_core.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_register_file_latch.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_pmp.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_register_file_fpga.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_multdiv_slow.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_wb_stage.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_multdiv_fast.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_tracer_pkg.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_if_stage.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_tracer.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_decoder.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_top.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_prefetch_buffer.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_register_file_ff.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_cs_registers.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_icache.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_csr.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/custom_module.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/next/Desktop/ibex/rtl/ibex_id_stage.sv' cannot be added to the project because it already exists in the project, skipping this file
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+CRITICAL WARNING: [HDL 9-3952] use of undefined macro 'ASSERT_IF' [/home/next/Desktop/ibex/rtl/ibex_branch_predict.sv:91]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_branch_predict.sv:91]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_branch_predict.sv:91]
+CRITICAL WARNING: [HDL 9-3952] use of undefined macro 'ASSERT_KNOWN' [/home/next/Desktop/ibex/rtl/ibex_compressed_decoder.sv:286]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_compressed_decoder.sv:286]
+CRITICAL WARNING: [HDL 9-3952] use of undefined macro 'ASSERT' [/home/next/Desktop/ibex/rtl/ibex_compressed_decoder.sv:289]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_compressed_decoder.sv:299]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_controller.sv:300]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_controller.sv:306]
+CRITICAL WARNING: [HDL 9-3952] use of undefined macro 'DV_FCOV_SIGNAL' [/home/next/Desktop/ibex/rtl/ibex_controller.sv:851]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_controller.sv:851]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_controller.sv:851]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_controller.sv:853]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_controller.sv:855]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_controller.sv:856]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "&". [/home/next/Desktop/ibex/rtl/ibex_controller.sv:857]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_controller.sv:868]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_core.sv:1045]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_core.sv:1050]
+CRITICAL WARNING: [HDL 9-3952] use of undefined macro 'ASSERT_KNOWN_IF' [/home/next/Desktop/ibex/rtl/ibex_core.sv:1051]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "csr_wdata_int". [/home/next/Desktop/ibex/rtl/ibex_core.sv:1051]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [/home/next/Desktop/ibex/rtl/ibex_core.sv:1051]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "end". [/home/next/Desktop/ibex/rtl/ibex_core.sv:1082]
+CRITICAL WARNING: [HDL 9-3952] use of undefined macro 'ASSERT_INIT' [/home/next/Desktop/ibex/rtl/ibex_core.sv:1437]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_core.sv:1437]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_cs_registers.sv:1505]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_csr.sv:55]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_decoder.sv:1188]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_fetch_fifo.sv:243]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_icache.sv:1057]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:365]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:370]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:393]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:400]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:764]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:883]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:965]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1033]
+CRITICAL WARNING: [HDL 9-3952] use of undefined macro 'DV_FCOV_SIGNAL_GEN_IF' [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1087]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1087]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1088]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "&". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1090]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "&". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1092]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1099]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1104]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1105]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1109]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1114]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "&&". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1122]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "&&". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1126]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "&&". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1130]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_id_stage.sv:1134]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_if_stage.sv:526]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_if_stage.sv:546]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_if_stage.sv:555]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_if_stage.sv:642]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "==". [/home/next/Desktop/ibex/rtl/ibex_if_stage.sv:647]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_load_store_unit.sv:502]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_load_store_unit.sv:502]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_load_store_unit.sv:503]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_load_store_unit.sv:516]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_multdiv_fast.sv:114]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_multdiv_fast.sv:255]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_multdiv_fast.sv:373]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_multdiv_fast.sv:522]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_multdiv_fast.sv:523]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_multdiv_slow.sv:364]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "}". [/home/next/Desktop/ibex/rtl/ibex_multdiv_slow.sv:366]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "!". [/home/next/Desktop/ibex/rtl/ibex_multdiv_slow.sv:366]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_top.sv:752]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "(". [/home/next/Desktop/ibex/rtl/ibex_wb_stage.sv:176]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "wb_valid_q". [/home/next/Desktop/ibex/rtl/ibex_wb_stage.sv:176]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [/home/next/Desktop/ibex/rtl/ibex_wb_stage.sv:176]
+[Tue May  4 12:45:23 2021] Launched synth_1...
+Run output will be captured here: /home/next/Desktop/ibex/project_1/project_1.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May  4 12:48:52 2021...

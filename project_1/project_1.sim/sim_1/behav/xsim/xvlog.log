@@ -1,0 +1,13 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/next/Desktop/ibex/rtl/ibex_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_top
+ERROR: [VRFC 10-2989] 'ibex_pkg' is not declared [/home/next/Desktop/ibex/rtl/ibex_top.sv:22]
+ERROR: [VRFC 10-2989] 'ibex_pkg' is not declared [/home/next/Desktop/ibex/rtl/ibex_top.sv:23]
+ERROR: [VRFC 10-2989] 'ibex_pkg' is not declared [/home/next/Desktop/ibex/rtl/ibex_top.sv:24]
+ERROR: [VRFC 10-2989] 'prim_ram_1p_pkg' is not declared [/home/next/Desktop/ibex/rtl/ibex_top.sv:41]
+ERROR: [VRFC 10-2989] 'ibex_pkg' is not declared [/home/next/Desktop/ibex/rtl/ibex_top.sv:74]
+ERROR: [VRFC 10-2989] 'ibex_pkg' is not declared [/home/next/Desktop/ibex/rtl/ibex_top.sv:115]
+ERROR: [VRFC 10-2989] 'prim_ram_1p_pkg' is not declared [/home/next/Desktop/ibex/rtl/ibex_top.sv:408]
+ERROR: [VRFC 10-3805] use of undefined macro 'ASSERT_KNOWN' [/home/next/Desktop/ibex/rtl/ibex_top.sv:752]
+ERROR: [VRFC 10-4982] syntax error near '(' [/home/next/Desktop/ibex/rtl/ibex_top.sv:752]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'alert_minor_o' is not allowed [/home/next/Desktop/ibex/rtl/ibex_top.sv:752]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'alert_major_o' is not allowed [/home/next/Desktop/ibex/rtl/ibex_top.sv:753]
