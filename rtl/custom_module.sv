@@ -9,9 +9,15 @@ module custom_module(
     input logic clk,
     input logic check_bloom,
     input logic match_bloom,
-    input logic reset_bloom
+    input logic reset_bloom,
+    input logic custom_op_ex
 );
 
+
+    //Adding actual custom instructions based on custom_op_ex
+    
+    
+    // case()
 
 //Passing on the signals to the bloom module
 Bloom bloom_i(

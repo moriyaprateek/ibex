@@ -63,7 +63,7 @@ module ibex_ex_block #(
   logic [31:0] custom_mod_result;
   logic [31:0] datareg1 [2:0] ,rem_res [2:0];
         
-    assign custom_op_ex = custom_op_i ;
+    assign custom_op_ex = custom_op_i;
     assign custom_valid = custom_valid_ex;
     assign custom_data = custom_data_ex;
     assign ram_addr_out = ram_addr_out_k;

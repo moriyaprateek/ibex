@@ -5,12 +5,12 @@
 # Start of session at: Tue May  4 22:38:51 2021
 # Process ID: 29278
 # Current directory: /home/next/Desktop/ibex/project_1/project_1.runs/synth_1
-# Command line: vivado -log ibex_ex_block.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ibex_ex_block.tcl
-# Log file: /home/next/Desktop/ibex/project_1/project_1.runs/synth_1/ibex_ex_block.vds
+# Command line: vivado -log .vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source .tcl
+# Log file: /home/next/Desktop/ibex/project_1/project_1.runs/synth_1/.vds
 # Journal file: /home/next/Desktop/ibex/project_1/project_1.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
-source ibex_ex_block.tcl -notrace
-Command: synth_design -top ibex_ex_block -part xc7a35tcpg236-1
+source .tcl -notrace
+Command: synth_design -top  -part xc7a35tcpg236-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'

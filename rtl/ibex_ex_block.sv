@@ -76,9 +76,10 @@ module ibex_ex_block #(
   logic check_bloom;
   logic match_bloom;
   logic reset_bloom;
+  logic custom_op_ex;
   
 
-
+assign custom_op_ex = custom_op_i;
 
   logic [32:0] multdiv_alu_operand_b, multdiv_alu_operand_a;
   logic [33:0] alu_adder_result_ext;
@@ -144,7 +145,8 @@ module ibex_ex_block #(
     .clk(clk),
     .check_bloom(check_bloom),
     .match_bloom(match_bloom),
-    .reset_bloom(reset_bloom)
+    .reset_bloom(reset_bloom),
+    .custom_op_ex(custom_op_ex)
   );
 
 

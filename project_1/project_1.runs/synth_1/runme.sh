@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log ibex_ex_block.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ibex_ex_block.tcl
+EAStep vivado -log .vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source .tcl
