@@ -25,6 +25,7 @@ module ibex_ex_block #(
      output logic custom_valid,
     //  output logic [31:0] custom_data,
     input [4:0] custom_op_i,
+    input logic insert_bloom,
     input logic check_bloom,
     input logic match_bloom,
     input logic reset_bloom,
