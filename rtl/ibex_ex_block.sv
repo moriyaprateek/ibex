@@ -73,9 +73,7 @@ module ibex_ex_block #(
 
   logic [31:0] alu_result, multdiv_result;
   // logic [31:0] custom_result;
-  logic check_bloom;
-  logic match_bloom;
-  logic reset_bloom;
+
   logic custom_op_ex;
   
 

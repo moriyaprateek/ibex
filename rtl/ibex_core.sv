@@ -207,7 +207,7 @@ module ibex_core import ibex_pkg::*; #(
   logic [31:0] custom_in_RS1_ex;
   logic [31:0] custom_in_RS2_ex;
   logic custom_en_ex;
-  logic custom_valid_ex;
+  // logic custom_valid_ex;
   // logic [31:0] custom_data_ex;
   logic [4:0] custom_op_ex;
   logic check_bloom;

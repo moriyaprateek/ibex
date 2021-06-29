@@ -57,7 +57,7 @@ run-simple-system: sw-simple-hello | $(Vibex_simple_system)
 # - "build-arty-35"
 # - "build-arty-100"
 # - "program-arty"
-arty-sw-program = examples/sw/led/led.vmem
+arty-sw-program = examples/sw/led/hello_test.vmem
 sw-led: $(arty-sw-program)
 
 .PHONY: $(arty-sw-program)

@@ -13,12 +13,32 @@ module custom_module(
     input logic custom_op_ex
 );
 
-
+    // logic [3:0] state = 0;
     //Adding actual custom instructions based on custom_op_ex
-    
-    
-    // case()
+    // reg [4:0] custom_op_temp;
 
+    // always@(posedge clk) begin
+
+    // case (custom_op_temp)
+    //     4'b0001: begin
+    //         // Insert into bloom
+    //         insert_bloom = custom_in_RS1;
+    //     end
+    //     4'b0011: begin
+    //         // Reset bloom
+    //         reset_loom = 1;
+    //     end
+    //     4'b0100: begin
+    //         //Check bloom. If check = correct, match will output 1
+    //         check_bloom = 1
+    //     end 
+    // default: begin
+    //     custom_op_temp = custom_op_ex;
+    //     check_bloom <= 1'b0;
+    //     reset_bloom = 1'b0; 
+    // end
+    // endcase
+    // end
 //Passing on the signals to the bloom module
 Bloom bloom_i(
     .data(custom_in_RS1),
