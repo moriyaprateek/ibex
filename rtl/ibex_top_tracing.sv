@@ -46,6 +46,8 @@ module ibex_top_tracing #(
     output logic [31:0]                  instr_addr_o,
     input  logic [31:0]                  instr_rdata_i,
     input  logic                         instr_err_i,
+    // input logic custom_en_ex,
+    // input logic custom_valid_ex,
 
     // Data memory interface
     output logic                         data_req_o,
@@ -145,6 +147,8 @@ module ibex_top_tracing #(
     .instr_addr_o,
     .instr_rdata_i,
     .instr_err_i,
+    // .custom_en_ex,
+    // .custom_valid_ex,
 
     .data_req_o,
     .data_gnt_i,

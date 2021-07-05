@@ -45,6 +45,8 @@ module ibex_lockstep import ibex_pkg::*; #(
     input  logic [31:0]                  instr_addr_i,
     input  logic [31:0]                  instr_rdata_i,
     input  logic                         instr_err_i,
+    output custom_en_ex,
+    output logic custom_valid_ex,
 
     input  logic                         data_req_i,
     input  logic                         data_gnt_i,
@@ -293,6 +295,8 @@ module ibex_lockstep import ibex_pkg::*; #(
     .instr_addr_o      (shadow_outputs.instr_addr),
     .instr_rdata_i     (shadow_inputs_q[0].instr_rdata),
     .instr_err_i       (shadow_inputs_q[0].instr_err),
+    .custom_en_ex      (custom_en_ex),
+    .custom_valid_ex   (custom_valid_ex),
 
     .data_req_o        (shadow_outputs.data_req),
     .data_gnt_i        (shadow_inputs_q[0].data_gnt),

@@ -210,6 +210,7 @@ module ibex_core import ibex_pkg::*; #(
   // logic custom_valid_ex;
   // logic [31:0] custom_data_ex;
   logic [4:0] custom_op_ex;
+  logic insert_bloom;
   logic check_bloom;
   logic match_bloom;
   logic reset_bloom;
@@ -685,6 +686,7 @@ module ibex_core import ibex_pkg::*; #(
       .custom_op_i(custom_op_ex),
       // .ram_data_ex_i(ram_data),
       // .ram_addr_out(ram_addr_out_ex),
+      .insert_bloom(insert_bloom),
       .check_bloom(check_bloom),
       .match_bloom(match_bloom),
       .reset_bloom(reset_bloom),

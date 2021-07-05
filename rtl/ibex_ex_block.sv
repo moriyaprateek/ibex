@@ -75,7 +75,7 @@ module ibex_ex_block #(
   logic [31:0] alu_result, multdiv_result;
   // logic [31:0] custom_result;
 
-  logic custom_op_ex;
+  logic [4:0] custom_op_ex;
   
 
 assign custom_op_ex = custom_op_i;
@@ -138,10 +138,10 @@ assign custom_op_ex = custom_op_i;
 
 
   custom_module cust_bloom(
-    .custom_en(custom_en),
+    .custom_en(custom_en_i),
     .custom_in_RS1(custom_in_RS1_i),
     .custom_in_RS2(custom_in_RS2_i),
-    .clk(clk),
+    .clk(clk_i),
     .check_bloom(check_bloom),
     .match_bloom(match_bloom),
     .reset_bloom(reset_bloom),

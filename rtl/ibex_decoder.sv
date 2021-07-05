@@ -462,6 +462,7 @@ module ibex_decoder #(
       OPCODE_CUSTOM_0: begin
         custom_en_o = 1'b1;
         rf_we = 1'b1;
+
         unique case({instr[30:25]})
         {6'b000001}:begin //Call the custom module. Insert
           custom_op_o = 5'b00001;
@@ -472,7 +473,7 @@ module ibex_decoder #(
         (6'b0000100): begin //Bloom check
         custom_op_o = 5'b00100;
         end
-
+        default: custom_op_o = 5'b00000;
         endcase
 
       end

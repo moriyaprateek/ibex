@@ -64,8 +64,8 @@ module top_artya7 (
      .instr_addr_o          (instr_addr),
      .instr_rdata_i         (instr_rdata),
      .instr_err_i           ('b0),
-     .custom_en_ex(custom_enable),
-     .custom_valid_ex(custom_valid),
+    //  .custom_en_ex(custom_enable),
+    //  .custom_valid_ex(custom_valid),
     //  .custom_data_ex(custom_data),
 
      .data_req_o            (data_req),
