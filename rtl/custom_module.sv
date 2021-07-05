@@ -13,6 +13,8 @@ module custom_module(
     input logic [4:0] custom_op_ex
 );
 
+// check_bloom = 1'b0;
+
     // logic [3:0] state = 0;
     //Adding actual custom instructions based on custom_op_ex
     // reg [4:0] custom_op_temp;
@@ -40,14 +42,14 @@ module custom_module(
     // endcase
     // end
 // Passing on the signals to the bloom module
-// Bloom bloom_i(
-//     .data(custom_in_RS1),
-//     .clk(clk),
-//     .insert(insert_bloom),
-//     .check(check_bloom),
-//     // .match(match_bloom),
-//     .reset(reset_bloom)
-// );
+Bloom bloom_i(
+    .data(custom_in_RS1),
+    .clk(clk),
+    .insert(insert_bloom),
+    .check(check_bloom),
+    // .match(match_bloom),
+    .reset(reset_bloom)
+);
 
 endmodule
 //.data needs to be the input data while the others are control signals.

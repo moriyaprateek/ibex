@@ -655,7 +655,7 @@ module ibex_id_stage #(
   assign lsu_req         = instr_executing ? data_req_allowed & lsu_req_dec  : 1'b0;
   assign mult_en_id      = instr_executing ? mult_en_dec                     : 1'b0;
   assign div_en_id       = instr_executing ? div_en_dec                      : 1'b0;
-
+  assign custom_en_id    = instr_executing ? custom_en_dec : 1'b0;
   assign lsu_req_o               = lsu_req;
   assign lsu_we_o                = lsu_we;
   assign lsu_type_o              = lsu_type;
@@ -673,7 +673,8 @@ module ibex_id_stage #(
 
   assign custom_in_RS1_ex_o = rf_rdata_a_fwd;
   assign custom_in_RS2_ex_o = rf_rdata_b_fwd;
-
+  assign custom_en_ex_o     = custom_en_id;
+  
   assign mult_en_ex_o                = mult_en_id;
   assign div_en_ex_o                 = div_en_id;
 
@@ -848,6 +849,11 @@ module ibex_id_stage #(
               stall_jump    = ~BranchTargetALU;
               jump_set_raw  = jump_set_dec;
             end
+            custom_en_dec: begin
+              id_fsm_d = MULTI_CYCLE;
+              stall_custom = 1'b1;
+              multicycle_done = 1'b0;
+            end
             alu_multicycle_dec: begin
               stall_alu     = 1'b1;
               id_fsm_d      = MULTI_CYCLE;
@@ -870,6 +876,7 @@ module ibex_id_stage #(
             stall_multdiv   = multdiv_en_dec;
             stall_branch    = branch_in_dec;
             stall_jump      = jump_in_dec;
+            stall_custom = custom_en_dec;
           end
         end
 

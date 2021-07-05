@@ -50,8 +50,8 @@ module ibex_top #(
     output logic [31:0]                  instr_addr_o,
     input  logic [31:0]                  instr_rdata_i,
     input  logic                         instr_err_i,
-    // input custom_en_ex,
-    // input logic custom_valid_ex,
+    output custom_en_ex,
+    output logic custom_valid_ex,
     // output logic [31:0] custom_data_ex,
 
     // Data memory interface
@@ -157,8 +157,8 @@ module ibex_top #(
   logic                        lockstep_alert_major, lockstep_alert_minor;
 
   //Custom logic
-  logic custom_en_ex;
-  logic custom_valid_ex;
+  // logic custom_en_ex;
+  // logic custom_valid_ex;
 
 
 
