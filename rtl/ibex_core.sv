@@ -52,7 +52,7 @@ module ibex_core import ibex_pkg::*; #(
     output logic [31:0]                  instr_addr_o,
     input  logic [31:0]                  instr_rdata_i,
     input  logic                         instr_err_i,
-    output custom_en_ex,
+    output logic custom_en_ex,
     output logic custom_valid_ex,
     // output logic [31:0] custom_data_ex,
 
@@ -670,26 +670,28 @@ module ibex_core import ibex_pkg::*; #(
       .clk_i                    ( clk_i                    ),
       .rst_ni                   ( rst_ni                   ),
 
-      // ALU signal from ID stage
-      .alu_operator_i           ( alu_operator_ex          ),
-      .alu_operand_a_i          ( alu_operand_a_ex         ),
-      .alu_operand_b_i          ( alu_operand_b_ex         ),
-      .alu_instr_first_cycle_i  ( instr_first_cycle_id     ),
-
       //Custom module signals from the Instruction decode(ID) stage
-
       .custom_en_i(custom_en_ex),
       .custom_in_RS1_i(custom_in_RS1_ex),
       .custom_in_RS2_i(custom_in_RS2_ex),
-      .custom_valid(custom_valid_ex), 
       // .custom_data(custom_data_ex),
       .custom_op_i(custom_op_ex),
+      .custom_valid(custom_valid_ex),
       // .ram_data_ex_i(ram_data),
       // .ram_addr_out(ram_addr_out_ex),
       .insert_bloom(insert_bloom),
       .check_bloom(check_bloom),
       .match_bloom(match_bloom),
       .reset_bloom(reset_bloom),
+
+      // ALU signal from ID stage
+      .alu_operator_i           ( alu_operator_ex          ),
+      .alu_operand_a_i          ( alu_operand_a_ex         ),
+      .alu_operand_b_i          ( alu_operand_b_ex         ),
+      .alu_instr_first_cycle_i  ( instr_first_cycle_id     ),
+
+
+
 
 
       // Branch target ALU signal from ID stage

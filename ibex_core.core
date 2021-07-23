@@ -36,10 +36,10 @@ filesets:
       - rtl/ibex_dummy_instr.sv
       - rtl/ibex_core.sv
       - rtl/custom_module.sv
-      - rtl/Bloom.v
-      - rtl/add.v
-      - rtl/comparator.v
-      - rtl/hash.v
+      - rtl/Bloom.sv
+      - rtl/add.sv
+      - rtl/comparator.sv
+      - rtl/hash.sv
     file_type: systemVerilogSource
 
   files_lint_verilator:

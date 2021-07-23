@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Jul 11 10:55:03 2021
+# Process ID: 24101
+# Current directory: /home/headless/Desktop/ibex
+# Command line: vivado
+# Log file: /home/headless/Desktop/ibex/vivado.log
+# Journal file: /home/headless/Desktop/ibex/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/headless/Desktop/ibex/build/lowrisc_ibex_top_artya7_0.1/synth-vivado/lowrisc_ibex_top_artya7_0.1.xpr
+synth_design -rtl -rtl_skip_mlo -name rtl_1

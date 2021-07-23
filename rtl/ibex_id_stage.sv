@@ -66,20 +66,15 @@ module ibex_id_stage #(
     // Stalls
     input  logic                      ex_valid_i,       // EX stage has valid output
     input  logic                      lsu_resp_valid_i, // LSU has valid output, or is done
-    
-
-    //Adding custom control
-    output logic [31:0] custom_in_RS1_ex_o,
-    output logic [31:0] custom_in_RS2_ex_o,
-    output logic custom_en_ex_o,
-    output logic [4:0] custom_op_ex_o,
-    
-    
-    
     // ALU
     output ibex_pkg::alu_op_e         alu_operator_ex_o,
     output logic [31:0]               alu_operand_a_ex_o,
     output logic [31:0]               alu_operand_b_ex_o,
+
+    output logic [31:0] custom_in_RS1_ex_o,
+    output logic [31:0] custom_in_RS2_ex_o,
+    output logic custom_en_ex_o,
+    output logic [4:0] custom_op_ex_o,
 
     // Multicycle Operation Stage Register
     input  logic [1:0]                imd_val_we_ex_i,
@@ -226,7 +221,6 @@ module ibex_id_stage #(
   logic        stall_multdiv;
   logic        stall_branch;
   logic        stall_jump;
-  logic        stall_custom;
   logic        stall_id;
   logic        stall_wb;
   logic        flush_id;
@@ -251,12 +245,6 @@ module ibex_id_stage #(
   logic        rf_ren_a_dec, rf_ren_b_dec;
 
 
-  //Custom control
-
-  logic custom_en_dec, custom_en_id;
-  logic [4:0] custom_op_dec;
-  assign custom_op_ex_o = custom_op_dec;
-
 
   // Read enables should only be asserted for valid and legal instructions
   assign rf_ren_a = instr_valid_i & ~instr_fetch_err_i & ~illegal_insn_o & rf_ren_a_dec;
@@ -267,6 +255,10 @@ module ibex_id_stage #(
 
   logic [31:0] rf_rdata_a_fwd;
   logic [31:0] rf_rdata_b_fwd;
+
+  logic custom_en_dec, custom_en_id;
+  logic [4:0] custom_op_dec; // The actual 5 bit opcode. CUSTOM_0 part of the full instruction.
+  assign custom op_ex_o = custom_op_dec;
 
   // ALU Control
   alu_op_e     alu_operator;
@@ -488,12 +480,8 @@ module ibex_id_stage #(
       .rf_ren_a_o                      ( rf_ren_a_dec         ),
       .rf_ren_b_o                      ( rf_ren_b_dec         ),
 
-      //Adding custom instr
-      .custom_en_o(custom_en_dec),
-      .custom_op_o(custom_op_dec),
-
-
-
+      .custom_en_o                     ( custom_en_dec ), // 1 bit enable for custom instr
+      .custom_op_o                     ( custom_op_dec), //op dec = the 6 bit opcode
       // ALU
       .alu_operator_o                  ( alu_operator         ),
       .alu_op_a_mux_sel_o              ( alu_op_a_mux_sel_dec ),
@@ -639,11 +627,9 @@ module ibex_id_stage #(
 
       .stall_id_i                     ( stall_id                ),
       .stall_wb_i                     ( stall_wb                ),
-      .stall_custom_i                 (stall_custom             ), 
       .flush_id_o                     ( flush_id                ),
+      .stall_custom_i                 ( stall_custom            ),
       .ready_wb_i                     ( ready_wb_i              ),
-      
-
 
       // Performance Counters
       .perf_jump_o                    ( perf_jump_o             ),
@@ -655,7 +641,7 @@ module ibex_id_stage #(
   assign lsu_req         = instr_executing ? data_req_allowed & lsu_req_dec  : 1'b0;
   assign mult_en_id      = instr_executing ? mult_en_dec                     : 1'b0;
   assign div_en_id       = instr_executing ? div_en_dec                      : 1'b0;
-  assign custom_en_id    = instr_executing ? custom_en_dec : 1'b0;
+
   assign lsu_req_o               = lsu_req;
   assign lsu_we_o                = lsu_we;
   assign lsu_type_o              = lsu_type;
@@ -671,10 +657,6 @@ module ibex_id_stage #(
   assign alu_operand_a_ex_o          = alu_operand_a;
   assign alu_operand_b_ex_o          = alu_operand_b;
 
-  assign custom_in_RS1_ex_o = rf_rdata_a_fwd;
-  assign custom_in_RS2_ex_o = rf_rdata_b_fwd;
-  assign custom_en_ex_o     = custom_en_id;
-  
   assign mult_en_ex_o                = mult_en_id;
   assign div_en_ex_o                 = div_en_id;
 
@@ -849,11 +831,6 @@ module ibex_id_stage #(
               stall_jump    = ~BranchTargetALU;
               jump_set_raw  = jump_set_dec;
             end
-            custom_en_dec: begin
-              id_fsm_d = MULTI_CYCLE;
-              stall_custom = 1'b1;
-              multicycle_done = 1'b0;
-            end
             alu_multicycle_dec: begin
               stall_alu     = 1'b1;
               id_fsm_d      = MULTI_CYCLE;
@@ -876,7 +853,6 @@ module ibex_id_stage #(
             stall_multdiv   = multdiv_en_dec;
             stall_branch    = branch_in_dec;
             stall_jump      = jump_in_dec;
-            stall_custom = custom_en_dec;
           end
         end
 

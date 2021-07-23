@@ -1,0 +1,96 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May  4 12:49:21 2021
+# Process ID: 7473
+# Current directory: /home/next/Desktop/ibex
+# Command line: vivado
+# Log file: /home/next/Desktop/ibex/vivado.log
+# Journal file: /home/next/Desktop/ibex/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/next/Desktop/ibex/project_1/project_1.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/next/Desktop/ibex/project_1/project_1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/next/Desktop/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 7323.855 ; gain = 50.094 ; free physical = 1315 ; free virtual = 4573
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: ibex_ex_block
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 7342.086 ; gain = 0.000 ; free physical = 798 ; free virtual = 4059
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ibex_ex_block' [/home/next/Desktop/ibex/rtl/ibex_ex_block.sv:11]
+	Parameter RV32M bound to: 2 - type: integer 
+	Parameter RV32B bound to: 0 - type: integer 
+	Parameter BranchTargetALU bound to: 1'b0 
+ERROR: [Synth 8-439] module 'ibex_multdiv_fast' not found [/home/next/Desktop/ibex/rtl/ibex_ex_block.sv:184]
+	Parameter RV32M bound to: 2 - type: integer 
+ERROR: [Synth 8-6156] failed synthesizing module 'ibex_ex_block' [/home/next/Desktop/ibex/rtl/ibex_ex_block.sv:11]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 7342.086 ; gain = 0.000 ; free physical = 846 ; free virtual = 4107
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+2 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+set_property source_mgmt_mode None [current_project]
+reorder_files -before /home/next/Desktop/ibex/rtl/ibex_pkg.sv /home/next/Desktop/ibex/rtl/ibex_alu.sv
+reorder_files -before /home/next/Desktop/ibex/rtl/ibex_alu.sv /home/next/Desktop/ibex/rtl/ibex_top.sv
+set_property is_enabled false [get_files  /home/next/Desktop/ibex/rtl/custom_module.sv]
+reorder_files -after /home/next/Desktop/ibex/rtl/ibex_top.sv /home/next/Desktop/ibex/rtl/ibex_core.sv
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Tue May  4 12:51:48 2021] Launched synth_1...
+Run output will be captured here: /home/next/Desktop/ibex/project_1/project_1.runs/synth_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/next/Desktop/ibex/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ibex_ex_block' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/next/Desktop/ibex/project_1/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj ibex_ex_block_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/next/Desktop/ibex/rtl/ibex_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_top
+ERROR: [VRFC 10-2989] 'ibex_pkg' is not declared [/home/next/Desktop/ibex/rtl/ibex_top.sv:22]
+ERROR: [VRFC 10-2989] 'ibex_pkg' is not declared [/home/next/Desktop/ibex/rtl/ibex_top.sv:23]
+ERROR: [VRFC 10-2989] 'ibex_pkg' is not declared [/home/next/Desktop/ibex/rtl/ibex_top.sv:24]
+ERROR: [VRFC 10-2989] 'prim_ram_1p_pkg' is not declared [/home/next/Desktop/ibex/rtl/ibex_top.sv:41]
+ERROR: [VRFC 10-2989] 'ibex_pkg' is not declared [/home/next/Desktop/ibex/rtl/ibex_top.sv:74]
+ERROR: [VRFC 10-2989] 'ibex_pkg' is not declared [/home/next/Desktop/ibex/rtl/ibex_top.sv:115]
+ERROR: [VRFC 10-2989] 'prim_ram_1p_pkg' is not declared [/home/next/Desktop/ibex/rtl/ibex_top.sv:408]
+ERROR: [VRFC 10-3805] use of undefined macro 'ASSERT_KNOWN' [/home/next/Desktop/ibex/rtl/ibex_top.sv:752]
+ERROR: [VRFC 10-4982] syntax error near '(' [/home/next/Desktop/ibex/rtl/ibex_top.sv:752]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'alert_minor_o' is not allowed [/home/next/Desktop/ibex/rtl/ibex_top.sv:752]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'alert_major_o' is not allowed [/home/next/Desktop/ibex/rtl/ibex_top.sv:753]
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/next/Desktop/ibex/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/next/Desktop/ibex/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 7382.191 ; gain = 0.000 ; free physical = 1374 ; free virtual = 4102
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Tue May  4 12:53:01 2021] Launched synth_1...
+Run output will be captured here: /home/next/Desktop/ibex/project_1/project_1.runs/synth_1/runme.log
+reorder_files -before /home/next/Desktop/ibex/rtl/ibex_pkg.sv /home/next/Desktop/ibex/rtl/ibex_multdiv_fast.sv
+reorder_files -after /home/next/Desktop/ibex/rtl/ibex_top.sv /home/next/Desktop/ibex/rtl/ibex_pkg.sv
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Tue May  4 12:53:49 2021] Launched synth_1...
+Run output will be captured here: /home/next/Desktop/ibex/project_1/project_1.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May  4 12:58:17 2021...

@@ -1,32 +1,45 @@
 #-----------------------------------------------------------
-# Vivado v2020.2 (64-bit)
-# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
-# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue May  4 12:49:21 2021
-# Process ID: 7473
-# Current directory: /home/next/Desktop/ibex
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Jul 16 18:17:07 2021
+# Process ID: 28309
+# Current directory: /home/headless/Desktop/ibex
 # Command line: vivado
-# Log file: /home/next/Desktop/ibex/vivado.log
-# Journal file: /home/next/Desktop/ibex/vivado.jou
+# Log file: /home/headless/Desktop/ibex/vivado.log
+# Journal file: /home/headless/Desktop/ibex/vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project /home/next/Desktop/ibex/project_1/project_1.xpr
-update_compile_order -fileset sources_1
+open_project /home/headless/Desktop/ibex/build/lowrisc_ibex_top_artya7_0.1/synth-vivado/lowrisc_ibex_top_artya7_0.1.xpr
 synth_design -rtl -rtl_skip_mlo -name rtl_1
-set_property source_mgmt_mode None [current_project]
-reorder_files -before /home/next/Desktop/ibex/rtl/ibex_pkg.sv /home/next/Desktop/ibex/rtl/ibex_alu.sv
-reorder_files -before /home/next/Desktop/ibex/rtl/ibex_alu.sv /home/next/Desktop/ibex/rtl/ibex_top.sv
-set_property is_enabled false [get_files  /home/next/Desktop/ibex/rtl/custom_module.sv]
-reorder_files -after /home/next/Desktop/ibex/rtl/ibex_top.sv /home/next/Desktop/ibex/rtl/ibex_core.sv
+write_schematic -format pdf -orientation portrait /home/headless/Desktop/ibex/schematic.pdf
+write_schematic -format pdf -orientation portrait /home/id_schematic.pdf
+close_project
+open_project /home/headless/Desktop/ibex/build/lowrisc_ibex_top_artya7_0.1/synth-vivado/lowrisc_ibex_top_artya7_0.1.xpr
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_project
+open_project /home/headless/Desktop/ibex/build/lowrisc_ibex_top_artya7_0.1/synth-vivado/lowrisc_ibex_top_artya7_0.1.xpr
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_project
+open_project /home/headless/Desktop/ibex/build/lowrisc_ibex_top_artya7_0.1/synth-vivado/lowrisc_ibex_top_artya7_0.1.xpr
+close_project
+open_project /home/headless/Desktop/ibex/build/lowrisc_ibex_top_artya7_0.1/synth-vivado/lowrisc_ibex_top_artya7_0.1.xpr
+close_project
+open_project /home/headless/Desktop/ibex/build/lowrisc_ibex_top_artya7_0.1/synth-vivado/lowrisc_ibex_top_artya7_0.1.xpr
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+open_run impl_1
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_project
+open_project /home/headless/Desktop/ibex/build/lowrisc_ibex_top_artya7_0.1/synth-vivado/lowrisc_ibex_top_artya7_0.1.xpr
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+refresh_design
 reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-launch_simulation
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-reorder_files -before /home/next/Desktop/ibex/rtl/ibex_pkg.sv /home/next/Desktop/ibex/rtl/ibex_multdiv_fast.sv
-reorder_files -after /home/next/Desktop/ibex/rtl/ibex_top.sv /home/next/Desktop/ibex/rtl/ibex_pkg.sv
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
+launch_runs impl_1 -jobs 20
+wait_on_run impl_1
+close_design
+open_run impl_1
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_project

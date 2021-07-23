@@ -106,8 +106,8 @@ module ibex_simple_system (
   logic [31:0] instr_addr;
   logic [31:0] instr_rdata;
   logic instr_err;
-  logic custom_en;
-  logic custom_valid_ex;
+  // logic custom_en;
+  // logic custom_valid_ex;
 
   assign instr_gnt = instr_req;
   assign instr_err = '0;

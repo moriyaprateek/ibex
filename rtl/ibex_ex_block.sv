@@ -22,12 +22,13 @@ module ibex_ex_block #(
      input logic custom_en_i,
     //  input logic [31:0] ram_data_ex_i, //data coming from RAM
     //  output logic [13:0] ram_addr_out , //address send to the RAM 
-     output logic custom_valid,
+    //  output logic custom_valid,
     //  output logic [31:0] custom_data,
     input [4:0] custom_op_i,
+    output logic custom_valid,
     input logic insert_bloom,
     input logic check_bloom,
-    input logic match_bloom,
+    output logic match_bloom,
     input logic reset_bloom,
   
     
@@ -76,9 +77,11 @@ module ibex_ex_block #(
   // logic [31:0] custom_result;
 
   logic [4:0] custom_op_ex;
+  logic custom_valid_ex;
   
 
 assign custom_op_ex = custom_op_i;
+assign custom_valid = custom_valid_ex;
 
   logic [32:0] multdiv_alu_operand_b, multdiv_alu_operand_a;
   logic [33:0] alu_adder_result_ext;
@@ -142,6 +145,8 @@ assign custom_op_ex = custom_op_i;
     .custom_in_RS1(custom_in_RS1_i),
     .custom_in_RS2(custom_in_RS2_i),
     .clk(clk_i),
+    .custom_valid (custom_valid_ex),
+    .insert_bloom(insert_bloom),
     .check_bloom(check_bloom),
     .match_bloom(match_bloom),
     .reset_bloom(reset_bloom),

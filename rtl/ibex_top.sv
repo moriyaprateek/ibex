@@ -50,9 +50,6 @@ module ibex_top #(
     output logic [31:0]                  instr_addr_o,
     input  logic [31:0]                  instr_rdata_i,
     input  logic                         instr_err_i,
-    output custom_en_ex,
-    output logic custom_valid_ex,
-    // output logic [31:0] custom_data_ex,
 
     // Data memory interface
     output logic                         data_req_o,
@@ -159,6 +156,9 @@ module ibex_top #(
   //Custom logic
   // logic custom_en_ex;
   // logic custom_valid_ex;
+  //Custom logic signals
+  logic custom_enable;
+  logic custom_valid;
 
 
 
@@ -192,6 +192,8 @@ module ibex_top #(
       .test_en_i ( test_en_i       ),
       .clk_o     ( clk             )
   );
+
+
 
   ////////////////////////
   // Core instantiation //
@@ -235,8 +237,8 @@ module ibex_top #(
     .instr_addr_o,
     .instr_rdata_i,
     .instr_err_i,
-    .custom_en_ex,
-    .custom_valid_ex,
+    .custom_en_ex(custom_enable),
+    .custom_valid_ex(custom_valid),
 
     .data_req_o,
     .data_gnt_i,
@@ -687,8 +689,8 @@ module ibex_top #(
       .instr_addr_i      (instr_addr_local),
       .instr_rdata_i     (instr_rdata_local),
       .instr_err_i       (instr_err_local),
-      .custom_en_ex      (custom_en_ex),
-      .custom_valid_ex   (custom_valid_ex),
+      .custom_en_ex      (custom_enable),
+      .custom_valid_ex   (custom_valid),
 
       .data_req_i        (data_req_local),
       .data_gnt_i        (data_gnt_local),
