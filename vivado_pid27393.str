@@ -1,0 +1,658 @@
+/*
+
+Xilinx Vivado v2021.1 (64-bit) [Major: 2021, Minor: 1]
+SW Build: 3247384 on Thu Jun 10 19:36:07 MDT 2021
+IP Build: 3246043 on Fri Jun 11 00:30:35 MDT 2021
+
+Process ID (PID): 27393
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Fri Jul 30 19:39:30 UTC 2021
+Time zone: 	Coordinated Universal Time (Etc/UTC)
+
+OS: Ubuntu
+OS Version: 4.15.0-140-generic
+OS Architecture: amd64
+Available processors (cores): 40
+
+Display: 1.0
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	/home/headless/common_folder/Xilinx/Vivado/2021.1/tps/lnx64/jre11.0.2
+Java executable: 	/home/headless/common_folder/Xilinx/Vivado/2021.1/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	root
+User home directory: /root
+User working directory: /home/headless/common_folder/ibex
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /home/headless/common_folder/Xilinx/Vivado
+HDI_APPROOT: /home/headless/common_folder/Xilinx/Vivado/2021.1
+RDI_DATADIR: /home/headless/common_folder/Xilinx/Vivado/2021.1/data
+RDI_BINDIR: /home/headless/common_folder/Xilinx/Vivado/2021.1/bin
+
+Vivado preferences file: /home/headless/.Xilinx/Vivado/2021.1/vivado.xml
+Vivado preferences directory: /home/headless/.Xilinx/Vivado/2021.1/
+Vivado layouts directory: /home/headless/.Xilinx/Vivado/2021.1/data/layouts
+PlanAhead jar file: 	/home/headless/common_folder/Xilinx/Vivado/2021.1/lib/classes/planAhead.jar
+Vivado log file: 	/home/headless/common_folder/ibex/vivado.log
+Vivado journal file: 	/home/headless/common_folder/ibex/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-27393-42e089cddc21
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /home/headless/common_folder/Xilinx/Vivado/2021.1/ids_lite/ISE
+XILINX_DSP: /home/headless/common_folder/Xilinx/Vivado/2021.1/ids_lite/ISE
+XILINX_HLS: /home/headless/common_folder/Xilinx/Vitis_HLS/2021.1
+XILINX_PLANAHEAD: /home/headless/common_folder/Xilinx/Vivado/2021.1
+XILINX_VITIS: 
+XILINX_VIVADO: /home/headless/common_folder/Xilinx/Vivado/2021.1
+XILINX_VIVADO_HLS: /home/headless/common_folder/Xilinx/Vivado/2021.1
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,772 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // y
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,777 MB. GUI used memory: 73 MB. Current time: 7/30/21, 7:39:32 PM UTC
+// Elapsed time: 23 seconds
+selectComboBox(RDIResource.HJFileChooserRecentListPreview_RECENT_DIRECTORIES, "/home/headless/common_folder/ibex", 0); // aj
+dismissFileChooser();
+// 'j' command handler elapsed time: 25 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// Elapsed time: 32 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_TCL_CONSOLE, "Tcl Console"); // az
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 796, 99); // dS
+// [GUI Memory]: 129 MB (+132797kb) [00:25:32]
+// [Engine Memory]: 1,783 MB (+1718065kb) [00:25:32]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 70 MB. Current time: 7/30/21, 8:09:32 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 70 MB. Current time: 7/30/21, 8:39:32 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 61 MB. Current time: 7/30/21, 9:09:32 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 61 MB. Current time: 7/30/21, 9:39:32 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 61 MB. Current time: 7/30/21, 10:09:32 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 61 MB. Current time: 7/30/21, 10:39:32 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 61 MB. Current time: 7/30/21, 11:09:32 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 61 MB. Current time: 7/30/21, 11:39:32 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 61 MB. Current time: 7/31/21, 12:09:32 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 60 MB. Current time: 7/31/21, 12:39:32 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 61 MB. Current time: 7/31/21, 1:09:32 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 61 MB. Current time: 7/31/21, 1:39:32 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 61 MB. Current time: 7/31/21, 2:09:32 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 61 MB. Current time: 7/31/21, 2:39:32 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 61 MB. Current time: 7/31/21, 3:09:32 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 61 MB. Current time: 7/31/21, 3:39:32 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 61 MB. Current time: 7/31/21, 4:09:33 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 60 MB. Current time: 7/31/21, 4:39:33 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 60 MB. Current time: 7/31/21, 5:09:33 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 60 MB. Current time: 7/31/21, 5:39:33 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 60 MB. Current time: 7/31/21, 6:09:33 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 60 MB. Current time: 7/31/21, 6:39:33 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 61 MB. Current time: 7/31/21, 7:09:33 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 60 MB. Current time: 7/31/21, 7:39:33 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 60 MB. Current time: 7/31/21, 8:09:33 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 60 MB. Current time: 7/31/21, 8:39:33 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 60 MB. Current time: 7/31/21, 9:09:33 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 60 MB. Current time: 7/31/21, 9:39:33 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 60 MB. Current time: 7/31/21, 10:09:33 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 61 MB. Current time: 7/31/21, 10:39:33 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 60 MB. Current time: 7/31/21, 11:09:33 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 60 MB. Current time: 7/31/21, 11:39:33 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 60 MB. Current time: 7/31/21, 12:09:33 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 61 MB. Current time: 7/31/21, 12:39:33 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 61 MB. Current time: 7/31/21, 1:09:34 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 61 MB. Current time: 7/31/21, 1:39:34 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 60 MB. Current time: 7/31/21, 2:09:34 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 60 MB. Current time: 7/31/21, 2:39:34 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 61 MB. Current time: 7/31/21, 3:09:34 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 60 MB. Current time: 7/31/21, 3:39:34 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 60 MB. Current time: 7/31/21, 4:09:34 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 60 MB. Current time: 7/31/21, 4:39:34 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 60 MB. Current time: 7/31/21, 5:09:34 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 60 MB. Current time: 7/31/21, 5:39:34 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 60 MB. Current time: 7/31/21, 6:09:34 PM UTC
+// Elapsed time: 81967 seconds
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // y
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+setFileChooser("/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/synth-vivado/lowrisc_ibex_top_artya7_0.1.xpr");
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: /home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/synth-vivado/lowrisc_ibex_top_artya7_0.1.xpr. Version: Vivado v2021.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project /home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/synth-vivado/lowrisc_ibex_top_artya7_0.1.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/synth-vivado/lowrisc_ibex_top_artya7_0.1.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,878 MB (+6332kb) [22:47:24]
+// WARNING: HEventQueue.dispatchEvent() is taking  2702 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,888 MB. GUI used memory: 76 MB. Current time: 7/31/21, 6:26:47 PM UTC
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/headless/common_folder/Xilinx/Vivado/2021.1/data/ip'. 
+// Project name: lowrisc_ibex_top_artya7_0.1; location: /home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/synth-vivado; part: xc7a35ticsg324-1L
+// 'j' command handler elapsed time: 10 seconds
+dismissDialog("Open Project"); // bz
+selectButton(PAResourceQtoS.RunGadget_SHOW_WARNING_AND_ERROR_MESSAGES_IN_MESSAGES, "18 warnings"); // h
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-689] width (9) of port connection 'data' does not match port width (8) of module 'hash' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/Bloom.sv:18]. ]", 3, true); // ah - Node
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-689] width (9) of port connection 'data' does not match port width (8) of module 'hash' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/Bloom.sv:18]. ]", 3); // ah
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-689] width (9) of port connection 'data' does not match port width (8) of module 'hash' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/Bloom.sv:18]. ]", 3); // ah
+// [GUI Memory]: 136 MB (+851kb) [22:47:48]
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Netlist 29-345] The value of SIM_DEVICE on instance 'u_top/core_clock_gate_i/gen_xilinx.u_impl_xilinx/gen_gate.u_bufgce' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. . ]", 4, true); // ah - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'insert_bloom_reg' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/custom_module.sv:31]. ]", 5, true); // ah - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6841] Block RAM (u_ram/u_ram/gen_generic.u_impl_generic/mem_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.. (address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.). ]", 6, false); // ah
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation]", 7); // ah
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation]", 7); // ah
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // o - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (cs): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cs):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A
+// Tcl Message: synth_design -rtl -rtl_skip_mlo -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -rtl_skip_mlo -name rtl_1 Starting synth_design Using part: xc7a35ticsg324-1L Top: top_artya7 
+// TclEventType: ELABORATE_START
+// HMemoryUtils.trashcanNow. Engine heap size: 1,942 MB. GUI used memory: 84 MB. Current time: 7/31/21, 6:27:24 PM UTC
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,990 MB. GUI used memory: 83 MB. Current time: 7/31/21, 6:27:30 PM UTC
+// [Engine Memory]: 1,990 MB (+19223kb) [22:48:08]
+// [GUI Memory]: 144 MB (+1277kb) [22:48:09]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 2,158 MB (+71570kb) [22:48:09]
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1424 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35ticsg324-1L 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 7686.227 ; gain = 0.000 ; free physical = 463579 ; free virtual = 504375 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'top_artya7' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_top_artya7_0.1/rtl/top_artya7.sv:5] 
+// Tcl Message: 	Parameter SRAMInitFile bound to: ../../../../../examples/sw/led/led.vmem - type: string  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ibex_top' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:15] 
+// Tcl Message: 	Parameter RegFile bound to: 1 - type: integer  	Parameter DmHaltAddr bound to: 0 - type: integer  	Parameter DmExceptionAddr bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ibex_register_file_fpga' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_fpga.sv:14] 
+// Tcl Message: 	Parameter RV32E bound to: 1'b0  	Parameter DataWidth bound to: 32'b00000000000000000000000000100000  	Parameter DummyInstructions bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ibex_register_file_fpga' (1#1) [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_fpga.sv:14] INFO: [Synth 8-6157] synthesizing module 'prim_clock_gating' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_prim_abstract_clock_gating_0/prim_clock_gating.sv:16] INFO: [Synth 8-6157] synthesizing module 'prim_xilinx_clock_gating' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_prim_xilinx_clock_gating_0/rtl/prim_xilinx_clock_gating.sv:5] 
+// Tcl Message: 	Parameter NoFpgaGate bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ibex_if_stage' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_if_stage.sv:15] 
+// Tcl Message: 	Parameter DmHaltAddr bound to: 0 - type: integer  	Parameter DmExceptionAddr bound to: 0 - type: integer  	Parameter DummyInstructions bound to: 1'b0  	Parameter ICache bound to: 1'b0  	Parameter ICacheECC bound to: 1'b0  	Parameter BusSizeECC bound to: 32'b00000000000000000000000000100000  	Parameter TagSizeECC bound to: 32'b00000000000000000000000000010110  	Parameter LineSizeECC bound to: 32'b00000000000000000000000001000000  	Parameter PCIncrCheck bound to: 1'b0  	Parameter BranchPredictor bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ibex_prefetch_buffer' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_prefetch_buffer.sv:12] 
+// Tcl Message: 	Parameter BranchPredictor bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ibex_fetch_fifo' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_fetch_fifo.sv:15] 
+// Tcl Message: 	Parameter NUM_REQS bound to: 32'b00000000000000000000000000000010  
+// Tcl Message: 	Parameter RV32E bound to: 1'b0  	Parameter RV32M bound to: 2 - type: integer  	Parameter RV32B bound to: 0 - type: integer  	Parameter DataIndTiming bound to: 1'b0  	Parameter BranchTargetALU bound to: 1'b0  	Parameter SpecBranch bound to: 1'b0  	Parameter WritebackStage bound to: 1'b0  	Parameter BranchPredictor bound to: 1'b0  
+// Tcl Message: 	Parameter RV32E bound to: 1'b0  	Parameter RV32M bound to: 2 - type: integer  	Parameter RV32B bound to: 0 - type: integer  	Parameter BranchTargetALU bound to: 1'b0  
+// Tcl Message: 	Parameter WritebackStage bound to: 1'b0  	Parameter BranchPredictor bound to: 1'b0  
+// Tcl Message: 	Parameter RV32M bound to: 2 - type: integer  	Parameter RV32B bound to: 0 - type: integer  	Parameter BranchTargetALU bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ibex_multdiv_fast' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_multdiv_fast.sv:17] 
+// Tcl Message: 	Parameter RV32M bound to: 2 - type: integer  
+// Tcl Message: 	Parameter d_size bound to: 8 - type: integer  	Parameter bl_size bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'hash' (13#1) [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/hash.sv:1] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'comparator' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/comparator.sv:1] 
+// Tcl Message: 	Parameter d_size bound to: 8 - type: integer  	Parameter bl_size bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'comparator' (14#1) [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/comparator.sv:1] INFO: [Synth 8-6155] done synthesizing module 'Bloom' (15#1) [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/Bloom.sv:1] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'custom_module' (16#1) [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/custom_module.sv:1] INFO: [Synth 8-6157] synthesizing module 'ibex_alu' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_alu.sv:9] 
+// Tcl Message: 	Parameter RV32B bound to: 0 - type: integer  
+// Tcl Message: 	Parameter WritebackStage bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ibex_wb_stage' (20#1) [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_wb_stage.sv:17] INFO: [Synth 8-6157] synthesizing module 'ibex_cs_registers' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_cs_registers.sv:15] 
+// Tcl Message: 	Parameter DbgTriggerEn bound to: 1'b0  	Parameter DbgHwBreakNum bound to: 32'b00000000000000000000000000000001  	Parameter DataIndTiming bound to: 1'b0  	Parameter DummyInstructions bound to: 1'b0  	Parameter ShadowCSR bound to: 1'b0  	Parameter ICache bound to: 1'b0  	Parameter MHPMCounterNum bound to: 32'b00000000000000000000000000000000  	Parameter MHPMCounterWidth bound to: 32'b00000000000000000000000000101000  	Parameter PMPEnable bound to: 1'b0  	Parameter PMPGranularity bound to: 32'b00000000000000000000000000000000  	Parameter PMPNumRegions bound to: 32'b00000000000000000000000000000100  	Parameter RV32E bound to: 1'b0  	Parameter RV32M bound to: 2 - type: integer  	Parameter RV32B bound to: 0 - type: integer  
+// Tcl Message: 	Parameter Width bound to: 32'b00000000000000000000000000000110  	Parameter ShadowCopy bound to: 1'b0  	Parameter ResetValue bound to: 6'b010000  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ibex_csr' (21#1) [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:11] INFO: [Synth 8-6157] synthesizing module 'ibex_csr__parameterized0' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:11] 
+// Tcl Message: 	Parameter Width bound to: 32'b00000000000000000000000000100000  	Parameter ShadowCopy bound to: 1'b0  	Parameter ResetValue bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ibex_csr__parameterized0' (21#1) [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:11] INFO: [Synth 8-6157] synthesizing module 'ibex_csr__parameterized1' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:11] 
+// Tcl Message: 	Parameter Width bound to: 32'b00000000000000000000000000010010  	Parameter ShadowCopy bound to: 1'b0  	Parameter ResetValue bound to: 18'b000000000000000000  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ibex_csr__parameterized1' (21#1) [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:11] INFO: [Synth 8-6157] synthesizing module 'ibex_csr__parameterized2' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:11] 
+// Tcl Message: 	Parameter Width bound to: 32'b00000000000000000000000000000110  	Parameter ShadowCopy bound to: 1'b0  	Parameter ResetValue bound to: 6'b000000  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ibex_csr__parameterized2' (21#1) [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:11] INFO: [Synth 8-6157] synthesizing module 'ibex_csr__parameterized3' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:11] 
+// Tcl Message: 	Parameter Width bound to: 32'b00000000000000000000000000100000  	Parameter ShadowCopy bound to: 1'b0  	Parameter ResetValue bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ibex_csr__parameterized3' (21#1) [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:11] INFO: [Synth 8-6157] synthesizing module 'ibex_csr__parameterized4' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:11] 
+// Tcl Message: 	Parameter Width bound to: 32'b00000000000000000000000000100000  	Parameter ShadowCopy bound to: 1'b0  	Parameter ResetValue bound to: 32'b01000000000000000000000000000011  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ibex_csr__parameterized4' (21#1) [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:11] INFO: [Synth 8-6157] synthesizing module 'ibex_csr__parameterized5' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:11] 
+// Tcl Message: 	Parameter Width bound to: 32'b00000000000000000000000000000011  	Parameter ShadowCopy bound to: 1'b0  	Parameter ResetValue bound to: 3'b100  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ibex_csr__parameterized5' (21#1) [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:11] INFO: [Synth 8-6157] synthesizing module 'ibex_counter' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_counter.sv:1] 
+// Tcl Message: 	Parameter CounterWidth bound to: 32'sb00000000000000000000000001000000  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ram_1p' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_fpga_xilinx_shared_0/rtl/ram_1p.sv:11] 
+// Tcl Message: 	Parameter Depth bound to: 32'sb00000000000000000100000000000000  	Parameter MemInitFile bound to: ../../../../../examples/sw/led/led.vmem - type: string  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'prim_ram_1p' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_prim_abstract_ram_1p_0/prim_ram_1p.sv:16] 
+// Tcl Message: 	Parameter Width bound to: 32'sb00000000000000000000000000100000  	Parameter Depth bound to: 32'sb00000000000000000100000000000000  	Parameter DataBitsPerMask bound to: 32'sb00000000000000000000000000001000  	Parameter MemInitFile bound to: ../../../../../examples/sw/led/led.vmem - type: string  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'prim_generic_ram_1p' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_prim_generic_ram_1p_0/rtl/prim_generic_ram_1p.sv:9] 
+// Tcl Message: 	Parameter Width bound to: 32'sb00000000000000000000000000100000  	Parameter Depth bound to: 32'sb00000000000000000100000000000000  	Parameter DataBitsPerMask bound to: 32'sb00000000000000000000000000001000  	Parameter MemInitFile bound to: ../../../../../examples/sw/led/led.vmem - type: string  
+// Tcl Message: 	Parameter BANDWIDTH bound to: OPTIMIZED - type: string  	Parameter CLKFBOUT_MULT bound to: 12 - type: integer  	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double  	Parameter CLKOUT0_DIVIDE bound to: 24 - type: integer  	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double  	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double  	Parameter COMPENSATION bound to: ZHOLD - type: string  	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer  	Parameter STARTUP_WAIT bound to: FALSE - type: string  
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 7686.227 ; gain = 0.000 ; free physical = 463592 ; free virtual = 504389 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 7686.227 ; gain = 0.000 ; free physical = 463596 ; free virtual = 504393 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 7686.227 ; gain = 0.000 ; free physical = 463596 ; free virtual = 504393 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 7686.227 ; gain = 0.000 ; free physical = 463589 ; free virtual = 504386 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement 
+// Tcl Message: INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_top_artya7_0.1/data/pins_artya7.xdc] Finished Parsing XDC File [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_top_artya7_0.1/data/pins_artya7.xdc] Completed Processing XDC Constraints  
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7734.250 ; gain = 0.000 ; free physical = 463488 ; free virtual = 504285 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 1 instances were transformed.   BUFGCE => BUFGCTRL: 1 instance   
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 7908.035 ; gain = 221.809 ; free physical = 463349 ; free virtual = 504151 
+// Tcl Message: 170 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:15 . Memory (MB): peak = 7908.035 ; gain = 237.816 ; free physical = 463350 ; free virtual = 504152 
+// [GUI Memory]: 159 MB (+7889kb) [22:48:10]
+// 'dU' command handler elapsed time: 15 seconds
+// Elapsed time: 15 seconds
+dismissDialog("Open Elaborated Design"); // bz
+// Elapsed time: 17 seconds
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top)]", 5); // bC
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'insert_bloom_reg' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/custom_module.sv:31]. ]", 10); // ah
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'insert_bloom_reg' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/custom_module.sv:31]. ]", 10); // ah
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Netlist 29-345] The value of SIM_DEVICE on instance 'u_top/core_clock_gate_i/gen_xilinx.u_impl_xilinx/gen_gate.u_bufgce' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. . ]", 9); // ah
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 19, true); // o - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// g (cs): Close Design: addNotify
+selectButton(PAResourceAtoD.ClosePlanner_YES, "Yes"); // a
+// bz (cs):  Close : addNotify
+dismissDialog("Close Design"); // g
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,144 MB. GUI used memory: 107 MB. Current time: 7/31/21, 6:28:04 PM UTC
+// Engine heap size: 2,145 MB. GUI used memory: 108 MB. Current time: 7/31/21, 6:28:04 PM UTC
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+// bz (cs):  Open Synthesized Design : addNotify
+dismissDialog("Close"); // bz
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a35ticsg324-1L 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,127 MB. GUI used memory: 87 MB. Current time: 7/31/21, 6:28:05 PM UTC
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1032 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.04 . Memory (MB): peak = 7908.035 ; gain = 0.000 ; free physical = 463493 ; free virtual = 504296 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 91 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2021.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_top_artya7_0.1/data/pins_artya7.xdc] Finished Parsing XDC File [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_top_artya7_0.1/data/pins_artya7.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7908.035 ; gain = 0.000 ; free physical = 463431 ; free virtual = 504234 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 14 instances were transformed.   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances   RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances  
+// Device view-level: 0.0
+// [GUI Memory]: 168 MB (+1218kb) [22:48:45]
+// 'dU' command handler elapsed time: 5 seconds
+dismissDialog("Open Synthesized Design"); // bz
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top)]", 5); // bC
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core)]", 10); // bC
+// [Engine Memory]: 2,308 MB (+43628kb) [22:48:51]
+// RouteApi::initDelayMediator elapsed time: 6.3s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), ex_block_i (ibex_ex_block)]", 13); // bC
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), ex_block_i (ibex_ex_block), Nets (563)]", 14); // bC
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), ex_block_i (ibex_ex_block), Nets (563), A]", 15); // bC
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), ex_block_i (ibex_ex_block), Nets (563), A]", 15); // bC
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), ex_block_i (ibex_ex_block), Nets (563)]", 14); // bC
+// PAPropertyPanels.initPanels (core_clock_gate_i (prim_clock_gating)) elapsed time: 0.2s
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), core_clock_gate_i (prim_clock_gating)]", 8, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), gen_regfile_fpga.register_file_i (ibex_register_file_fpga)]", 9, false); // bC
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), Nets (360)]", 6); // bC
+// PAPropertyPanels.initPanels (u_ibex_core_n_4) elapsed time: 0.2s
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), Nets (360), u_ibex_core_n_4]", 50, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), Nets (360), ex_block_i/gen_multdiv_fast.multdiv_i/A]", 11, true); // bC - Node
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), Nets (360), ex_block_i/gen_multdiv_fast.multdiv_i/B]", 12, true); // bC - Node
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), Nets (360), ex_block_i/gen_multdiv_fast.multdiv_i/gen_mult_fast.mult_state_q]", 13, true); // bC - Node
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), Nets (360), id_stage_i/controller_i/ctrl_fsm_cs]", 14, true); // bC - Node
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), Nets (360)]", 6); // bC
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), ex_block_i (ibex_ex_block), alu_i (ibex_alu)]", 15); // bC
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), ex_block_i (ibex_ex_block), alu_i (ibex_alu), Nets (208)]", 16); // bC
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), ex_block_i (ibex_ex_block), alu_i (ibex_alu), Nets (208)]", 16); // bC
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), ex_block_i (ibex_ex_block), Nets (563)]", 14); // bC
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), ex_block_i (ibex_ex_block), Nets (563)]", 14); // bC
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), ex_block_i (ibex_ex_block), alu_i (ibex_alu)]", 15); // bC
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), ex_block_i (ibex_ex_block)]", 13); // bC
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), id_stage_i (ibex_id_stage)]", 14); // bC
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), id_stage_i (ibex_id_stage), controller_i (ibex_controller)]", 17); // bC
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), id_stage_i (ibex_id_stage), controller_i (ibex_controller)]", 17); // bC
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), id_stage_i (ibex_id_stage), Leaf Cells (103)]", 16); // bC
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), id_stage_i (ibex_id_stage), Leaf Cells (103)]", 16); // bC
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), id_stage_i (ibex_id_stage), Nets (693)]", 15); // bC
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), id_stage_i (ibex_id_stage), Nets (693)]", 15); // bC
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), id_stage_i (ibex_id_stage)]", 14); // bC
+// Elapsed time: 112 seconds
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), cs_registers_i (ibex_cs_registers)]", 12, false); // bC
+// Run Command: RDIResourceCommand.RDICommands_FIND
+// g (cs): Find: addNotify
+selectComboBox(PAResourceTtoZ.TclFindDialog_FIND, "Nets", 1); // e
+// Elapsed time: 11 seconds
+setText(PAResourceTtoZ.TclFindDialog_RESULT_NAME, "custom_module", true); // j
+// Tcl Command: 'show_objects -name custom_module [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]'
+// bz (g):  Find Nets : addNotify
+// TclEventType: SHOW_OBJECTS
+// [GUI Memory]: 180 MB (+3357kb) [22:51:50]
+// Tcl Message: show_objects -name custom_module [get_nets -hierarchical -top_net_of_hierarchical_group "*" ] 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Find Nets"); // bz
+dismissDialog("Find"); // g
+selectTable(PAResourceItoN.NetTablePanel_NET_TABLE, "u_top/u_ibex_core/load_store_unit_i/rdata_w_ext[9] ; 2 ; 2 ; true ; Has unplaced ports or pins", 0, "u_top/u_ibex_core/load_store_unit_i/rdata_w_ext[9]", 0); // E
+selectTable(PAResourceItoN.NetTablePanel_NET_TABLE, "u_top/u_ibex_core/load_store_unit_i/mem_reg_r1_0_31_6_11_i_37_n_0 ; 3 ; 3 ; true ; Has unplaced ports or pins", 57, "u_top/u_ibex_core/load_store_unit_i/mem_reg_r1_0_31_6_11_i_37_n_0", 0); // E
+selectTable(PAResourceItoN.NetTablePanel_NET_TABLE, "u_top/u_ibex_core/load_store_unit_i/mem_reg_r1_0_31_6_11_i_37_n_0 ; 3 ; 3 ; true ; Has unplaced ports or pins", 57, "u_top/u_ibex_core/load_store_unit_i/mem_reg_r1_0_31_6_11_i_37_n_0", 0, false, false, false, false, true); // E - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 2,395 MB. GUI used memory: 123 MB. Current time: 7/31/21, 6:31:39 PM UTC
+// Elapsed time: 23 seconds
+selectButton(PAResourceEtoH.FindView_RERUN, "Find Results_RERUN_TCL_CMD"); // E
+// Tcl Command: 'show_objects -name custom_module [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]'
+// TclEventType: SHOW_OBJECTS
+// bz (cs):  Find objects : addNotify
+// Tcl Message: show_objects -name custom_module [get_nets -hierarchical -top_net_of_hierarchical_group "*" ] 
+dismissDialog("Find objects"); // bz
+selectTab("PAResourceOtoP.PAViews_FIND_RESULTS", (HResource) null, "Nets - custom_module (4306)", 0); // d
+selectTab("PAResourceOtoP.PAViews_FIND_RESULTS", (HResource) null, "Nets - custom_module (4306)", 0); // d
+// Run Command: RDIResourceCommand.RDICommands_FIND
+// g (cs): Find: addNotify
+setText(PAResourceTtoZ.TclFindDialog_RESULT_NAME, "custom_module"); // j
+selectComboBox(PAResourceTtoZ.TclFindDialog_FIND, "Cells", 0); // e
+selectComboBox("pa.Finder.Cells_condition_1", "is", 0); // e
+selectComboBox(PAResourceTtoZ.TclFindDialog_FIND, "Nets", 1); // e
+selectComboBox("pa.Finder.Nets_condition_1", "matches", 2); // e
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Tcl Command: 'show_objects -name custom_module [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]'
+// bz (g):  Find Nets : addNotify
+// TclEventType: SHOW_OBJECTS
+// Tcl Message: show_objects -name custom_module [get_nets -hierarchical -top_net_of_hierarchical_group "*" ] 
+dismissDialog("Find Nets"); // bz
+dismissDialog("Find"); // g
+closeFrame(PAResourceOtoP.PAViews_FIND_RESULTS, "Find Results - Nets - custom_module (4306)"); // az
+// Run Command: RDIResourceCommand.RDICommands_FIND
+// g (cs): Find: addNotify
+setText(PAResourceTtoZ.TclFindDialog_RESULT_NAME, "custom_module"); // j
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Tcl Command: 'show_objects -name custom_module [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]'
+// bz (g):  Find Nets : addNotify
+// TclEventType: SHOW_OBJECTS
+// Tcl Message: show_objects -name custom_module [get_nets -hierarchical -top_net_of_hierarchical_group "*" ] 
+dismissDialog("Find Nets"); // bz
+dismissDialog("Find"); // g
+selectTable(PAResourceItoN.NetTablePanel_NET_TABLE, "u_top/u_ibex_core/id_stage_i/controller_i/rdata_q[31]_i_9__1_n_0 ; 32 ; 32 ; true ; Has unplaced ports or pins", 4265, "32", 1); // E
+selectTable(PAResourceItoN.NetTablePanel_NET_TABLE, "u_top/u_ibex_core/id_stage_i/controller_i/rdata_q[31]_i_9__1_n_0 ; 32 ; 32 ; true ; Has unplaced ports or pins", 4265, "32", 1); // E
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // o - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// g (cs): Close Design: addNotify
+selectButton(PAResourceAtoD.ClosePlanner_YES, "Yes"); // a
+// bz (cs):  Close : addNotify
+dismissDialog("Close Design"); // g
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,396 MB. GUI used memory: 124 MB. Current time: 7/31/21, 6:32:42 PM UTC
+// Engine heap size: 2,396 MB. GUI used memory: 125 MB. Current time: 7/31/21, 6:32:42 PM UTC
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+// A (cs): Elaborate Design: addNotify
+dismissDialog("Close"); // bz
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cs):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+dismissDialog("Elaborate Design"); // A
+// Tcl Message: synth_design -rtl -rtl_skip_mlo -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -rtl_skip_mlo -name rtl_1 Starting synth_design Using part: xc7a35ticsg324-1L Top: top_artya7 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,560 MB. GUI used memory: 94 MB. Current time: 7/31/21, 6:32:52 PM UTC
+// [Engine Memory]: 2,560 MB (+143963kb) [22:53:30]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 8074.270 ; gain = 0.000 ; free physical = 463052 ; free virtual = 503858 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'top_artya7' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_top_artya7_0.1/rtl/top_artya7.sv:5] 
+// Tcl Message: 	Parameter SRAMInitFile bound to: ../../../../../examples/sw/led/led.vmem - type: string  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ibex_top' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:15] 
+// Tcl Message: 	Parameter RegFile bound to: 1 - type: integer  	Parameter DmHaltAddr bound to: 0 - type: integer  	Parameter DmExceptionAddr bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ibex_register_file_fpga' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_fpga.sv:14] 
+// Tcl Message: 	Parameter RV32E bound to: 1'b0  	Parameter DataWidth bound to: 32'b00000000000000000000000000100000  	Parameter DummyInstructions bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ibex_register_file_fpga' (1#1) [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_fpga.sv:14] INFO: [Synth 8-6157] synthesizing module 'prim_clock_gating' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_prim_abstract_clock_gating_0/prim_clock_gating.sv:16] INFO: [Synth 8-6157] synthesizing module 'prim_xilinx_clock_gating' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_prim_xilinx_clock_gating_0/rtl/prim_xilinx_clock_gating.sv:5] 
+// Tcl Message: 	Parameter NoFpgaGate bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ibex_if_stage' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_if_stage.sv:15] 
+// Tcl Message: 	Parameter DmHaltAddr bound to: 0 - type: integer  	Parameter DmExceptionAddr bound to: 0 - type: integer  	Parameter DummyInstructions bound to: 1'b0  	Parameter ICache bound to: 1'b0  	Parameter ICacheECC bound to: 1'b0  	Parameter BusSizeECC bound to: 32'b00000000000000000000000000100000  	Parameter TagSizeECC bound to: 32'b00000000000000000000000000010110  	Parameter LineSizeECC bound to: 32'b00000000000000000000000001000000  	Parameter PCIncrCheck bound to: 1'b0  	Parameter BranchPredictor bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ibex_prefetch_buffer' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_prefetch_buffer.sv:12] 
+// Tcl Message: 	Parameter BranchPredictor bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ibex_fetch_fifo' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_fetch_fifo.sv:15] 
+// Tcl Message: 	Parameter NUM_REQS bound to: 32'b00000000000000000000000000000010  
+// Tcl Message: 	Parameter RV32E bound to: 1'b0  	Parameter RV32M bound to: 2 - type: integer  	Parameter RV32B bound to: 0 - type: integer  	Parameter DataIndTiming bound to: 1'b0  	Parameter BranchTargetALU bound to: 1'b0  	Parameter SpecBranch bound to: 1'b0  	Parameter WritebackStage bound to: 1'b0  	Parameter BranchPredictor bound to: 1'b0  
+// Tcl Message: 	Parameter RV32E bound to: 1'b0  	Parameter RV32M bound to: 2 - type: integer  	Parameter RV32B bound to: 0 - type: integer  	Parameter BranchTargetALU bound to: 1'b0  
+// Tcl Message: 	Parameter WritebackStage bound to: 1'b0  	Parameter BranchPredictor bound to: 1'b0  
+// Tcl Message: 	Parameter RV32M bound to: 2 - type: integer  	Parameter RV32B bound to: 0 - type: integer  	Parameter BranchTargetALU bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ibex_multdiv_fast' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_multdiv_fast.sv:17] 
+// Tcl Message: 	Parameter RV32M bound to: 2 - type: integer  
+// Tcl Message: 	Parameter d_size bound to: 8 - type: integer  	Parameter bl_size bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'hash' (13#1) [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/hash.sv:1] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'comparator' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/comparator.sv:1] 
+// Tcl Message: 	Parameter d_size bound to: 8 - type: integer  	Parameter bl_size bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'comparator' (14#1) [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/comparator.sv:1] INFO: [Synth 8-6155] done synthesizing module 'Bloom' (15#1) [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/Bloom.sv:1] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'custom_module' (16#1) [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/custom_module.sv:1] INFO: [Synth 8-6157] synthesizing module 'ibex_alu' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_alu.sv:9] 
+// Tcl Message: 	Parameter RV32B bound to: 0 - type: integer  
+// Tcl Message: 	Parameter WritebackStage bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ibex_wb_stage' (20#1) [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_wb_stage.sv:17] INFO: [Synth 8-6157] synthesizing module 'ibex_cs_registers' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_cs_registers.sv:15] 
+// Tcl Message: 	Parameter DbgTriggerEn bound to: 1'b0  	Parameter DbgHwBreakNum bound to: 32'b00000000000000000000000000000001  	Parameter DataIndTiming bound to: 1'b0  	Parameter DummyInstructions bound to: 1'b0  	Parameter ShadowCSR bound to: 1'b0  	Parameter ICache bound to: 1'b0  	Parameter MHPMCounterNum bound to: 32'b00000000000000000000000000000000  	Parameter MHPMCounterWidth bound to: 32'b00000000000000000000000000101000  	Parameter PMPEnable bound to: 1'b0  	Parameter PMPGranularity bound to: 32'b00000000000000000000000000000000  	Parameter PMPNumRegions bound to: 32'b00000000000000000000000000000100  	Parameter RV32E bound to: 1'b0  	Parameter RV32M bound to: 2 - type: integer  	Parameter RV32B bound to: 0 - type: integer  
+// Tcl Message: 	Parameter Width bound to: 32'b00000000000000000000000000000110  	Parameter ShadowCopy bound to: 1'b0  	Parameter ResetValue bound to: 6'b010000  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ibex_csr' (21#1) [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:11] INFO: [Synth 8-6157] synthesizing module 'ibex_csr__parameterized0' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:11] 
+// Tcl Message: 	Parameter Width bound to: 32'b00000000000000000000000000100000  	Parameter ShadowCopy bound to: 1'b0  	Parameter ResetValue bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ibex_csr__parameterized0' (21#1) [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:11] INFO: [Synth 8-6157] synthesizing module 'ibex_csr__parameterized1' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:11] 
+// Tcl Message: 	Parameter Width bound to: 32'b00000000000000000000000000010010  	Parameter ShadowCopy bound to: 1'b0  	Parameter ResetValue bound to: 18'b000000000000000000  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ibex_csr__parameterized1' (21#1) [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:11] INFO: [Synth 8-6157] synthesizing module 'ibex_csr__parameterized2' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:11] 
+// Tcl Message: 	Parameter Width bound to: 32'b00000000000000000000000000000110  	Parameter ShadowCopy bound to: 1'b0  	Parameter ResetValue bound to: 6'b000000  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ibex_csr__parameterized2' (21#1) [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:11] INFO: [Synth 8-6157] synthesizing module 'ibex_csr__parameterized3' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:11] 
+// Tcl Message: 	Parameter Width bound to: 32'b00000000000000000000000000100000  	Parameter ShadowCopy bound to: 1'b0  	Parameter ResetValue bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ibex_csr__parameterized3' (21#1) [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:11] INFO: [Synth 8-6157] synthesizing module 'ibex_csr__parameterized4' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:11] 
+// Tcl Message: 	Parameter Width bound to: 32'b00000000000000000000000000100000  	Parameter ShadowCopy bound to: 1'b0  	Parameter ResetValue bound to: 32'b01000000000000000000000000000011  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ibex_csr__parameterized4' (21#1) [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:11] INFO: [Synth 8-6157] synthesizing module 'ibex_csr__parameterized5' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:11] 
+// Tcl Message: 	Parameter Width bound to: 32'b00000000000000000000000000000011  	Parameter ShadowCopy bound to: 1'b0  	Parameter ResetValue bound to: 3'b100  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ibex_csr__parameterized5' (21#1) [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:11] INFO: [Synth 8-6157] synthesizing module 'ibex_counter' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_counter.sv:1] 
+// Tcl Message: 	Parameter CounterWidth bound to: 32'sb00000000000000000000000001000000  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ram_1p' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_fpga_xilinx_shared_0/rtl/ram_1p.sv:11] 
+// Tcl Message: 	Parameter Depth bound to: 32'sb00000000000000000100000000000000  	Parameter MemInitFile bound to: ../../../../../examples/sw/led/led.vmem - type: string  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'prim_ram_1p' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_prim_abstract_ram_1p_0/prim_ram_1p.sv:16] 
+// Tcl Message: 	Parameter Width bound to: 32'sb00000000000000000000000000100000  	Parameter Depth bound to: 32'sb00000000000000000100000000000000  	Parameter DataBitsPerMask bound to: 32'sb00000000000000000000000000001000  	Parameter MemInitFile bound to: ../../../../../examples/sw/led/led.vmem - type: string  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'prim_generic_ram_1p' [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_prim_generic_ram_1p_0/rtl/prim_generic_ram_1p.sv:9] 
+// Tcl Message: 	Parameter Width bound to: 32'sb00000000000000000000000000100000  	Parameter Depth bound to: 32'sb00000000000000000100000000000000  	Parameter DataBitsPerMask bound to: 32'sb00000000000000000000000000001000  	Parameter MemInitFile bound to: ../../../../../examples/sw/led/led.vmem - type: string  
+// Tcl Message: 	Parameter BANDWIDTH bound to: OPTIMIZED - type: string  	Parameter CLKFBOUT_MULT bound to: 12 - type: integer  	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double  	Parameter CLKOUT0_DIVIDE bound to: 24 - type: integer  	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double  	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double  	Parameter COMPENSATION bound to: ZHOLD - type: string  	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer  	Parameter STARTUP_WAIT bound to: FALSE - type: string  
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 8074.270 ; gain = 0.000 ; free physical = 463063 ; free virtual = 503869 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8074.270 ; gain = 0.000 ; free physical = 463072 ; free virtual = 503878 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8074.270 ; gain = 0.000 ; free physical = 463072 ; free virtual = 503878 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 8074.270 ; gain = 0.000 ; free physical = 463064 ; free virtual = 503870 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement 
+// Tcl Message: INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_top_artya7_0.1/data/pins_artya7.xdc] Finished Parsing XDC File [/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/src/lowrisc_ibex_top_artya7_0.1/data/pins_artya7.xdc] Completed Processing XDC Constraints  
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8211.105 ; gain = 0.000 ; free physical = 462983 ; free virtual = 503789 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 1 instances were transformed.   BUFGCE => BUFGCTRL: 1 instance   
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 8263.117 ; gain = 188.848 ; free physical = 462951 ; free virtual = 503757 
+// Tcl Message: 169 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 8263.117 ; gain = 188.848 ; free physical = 462951 ; free virtual = 503757 
+// 'dU' command handler elapsed time: 13 seconds
+dismissDialog("Open Elaborated Design"); // bz
+// Elapsed time: 97 seconds
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top)]", 5, false); // bC
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top)]", 5); // bC
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core)]", 10); // bC
+// Elapsed time: 10 seconds
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), ex_block_i (ibex_ex_block)]", 14); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), ex_block_i (ibex_ex_block), cust_bloom (custom_module)]", 18, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), ex_block_i (ibex_ex_block), cust_bloom (custom_module)]", 18, false, false, false, false, true, false); // bC - Popup Trigger
+selectMenu(PAResourceItoN.InstanceMenu_FLOORPLANNING, "Floorplanning"); // ak
+selectMenu(PAResourceOtoP.PrimitivesMenu_HIGHLIGHT_LEAF_CELLS, "Highlight Leaf Cells"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ak
+selectMenuItem(PAResourceCommand.PACommandNames_SHOW_CONNECTIVITY, "Show Connectivity"); // an
+// Run Command: PAResourceCommand.PACommandNames_SHOW_CONNECTIVITY
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), ex_block_i (ibex_ex_block), cust_bloom (custom_module)]", 70, false, false, false, false, true, false); // bC - Popup Trigger
+selectMenu(PAResourceItoN.InstanceMenu_FLOORPLANNING, "Floorplanning"); // ak
+selectMenu(PAResourceOtoP.PrimitivesMenu_HIGHLIGHT_LEAF_CELLS, "Highlight Leaf Cells"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ak
+selectMenuItem(PAResourceCommand.PACommandNames_SCHEMATIC, "Schematic"); // an
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// PAPropertyPanels.initPanels (clk_i) elapsed time: 0.2s
+// Elapsed time: 59 seconds
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), ex_block_i (ibex_ex_block), Nets (728), result_ex_o]", 48); // bC
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), ex_block_i (ibex_ex_block), Nets (728), result_ex_o]", 48); // bC
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // m
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 2); // m
+// Elapsed time: 90 seconds
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), ex_block_i (ibex_ex_block), Nets (728), custom_op_i]", 59); // bC
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), ex_block_i (ibex_ex_block), Nets (728), custom_in_RS1_i]", 25); // bC
+selectView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic", 547, 302, 1184, 648, false, false, false, true, false); // f - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SHOW_CONNECTIVITY, "Show Connectivity"); // an
+// Run Command: PAResourceCommand.PACommandNames_SHOW_CONNECTIVITY
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), ex_block_i (ibex_ex_block), Nets (728), custom_en_i]", 49, false, false, false, false, true, false); // bC - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenuItem(PAResourceCommand.PACommandNames_SCHEMATIC, "Schematic"); // an
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// Elapsed time: 21 seconds
+selectView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic", 190, 327, 1184, 648, false, false, false, true, false); // f - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ak
+selectMenu(PAResourceQtoS.SchMenuAndMouse_EXPAND_CONE, "Expand Cone"); // ak
+selectMenu(PAResourceItoN.NetlistSchMenuAndMouse_VIEW, "View"); // ak
+selectMenu(PAResourceItoN.NetlistSchMenuAndMouse_VIEW, "View"); // ak
+selectMenu(PAResourceItoN.NetlistSchMenuAndMouse_VIEW, "View"); // ak
+selectMenu(PAResourceItoN.NetlistSchMenuAndMouse_VIEW, "View"); // ak
+selectMenu(PAResourceQtoS.SchMenuAndMouse_EXPAND_CONE, "Expand Cone"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenuItem(PAResourceCommand.PACommandNames_SHOW_CONNECTIVITY, "Show Connectivity"); // an
+// Run Command: PAResourceCommand.PACommandNames_SHOW_CONNECTIVITY
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), Nets (1829), custom_en_ex]", 105, false, false, false, false, true, false); // bC - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenuItem(PAResourceCommand.PACommandNames_SCHEMATIC, "Schematic"); // an
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// Elapsed time: 29 seconds
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), Nets (1829), custom_en_ex]", 105, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), Nets (1829), custom_valid_ex]", 106, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[top_artya7, u_top (ibex_top), u_ibex_core (ibex_core), Nets (1829), custom_valid_ex]", 106, false, false, false, false, true, false); // bC - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenuItem(PAResourceCommand.PACommandNames_SHOW_HIERARCHY, "Show Hierarchy"); // an
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// Elapsed time: 74 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (4)", 4); // m
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (5)", 5); // m

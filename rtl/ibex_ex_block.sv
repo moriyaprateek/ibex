@@ -26,10 +26,10 @@ module ibex_ex_block #(
     //  output logic [31:0] custom_data,
     input [4:0] custom_op_i,
     output logic custom_valid,
-    input logic insert_bloom,
-    input logic check_bloom,
-    output logic match_bloom,
-    input logic reset_bloom,
+    // input logic insert_bloom,
+    // input logic check_bloom,
+    // output logic match_bloom,
+    // input logic reset_bloom,
   
     
      
@@ -146,10 +146,10 @@ assign custom_valid = custom_valid_ex;
     .custom_in_RS2(custom_in_RS2_i),
     .clk(clk_i),
     .custom_valid (custom_valid_ex),
-    .insert_bloom(insert_bloom),
-    .check_bloom(check_bloom),
-    .match_bloom(match_bloom),
-    .reset_bloom(reset_bloom),
+    // .insert_bloom(insert_bloom),
+    // .check_bloom(check_bloom),
+    // .match_bloom(match_bloom),
+    // .reset_bloom(reset_bloom),
     .custom_op_ex(custom_op_ex)
   );
 

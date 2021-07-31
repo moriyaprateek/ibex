@@ -258,7 +258,7 @@ module ibex_id_stage #(
 
   logic custom_en_dec, custom_en_id;
   logic [4:0] custom_op_dec; // The actual 5 bit opcode. CUSTOM_0 part of the full instruction.
-  assign custom op_ex_o = custom_op_dec;
+  assign custom_op_ex_o = custom_op_dec;
 
   // ALU Control
   alu_op_e     alu_operator;

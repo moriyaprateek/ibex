@@ -2,44 +2,21 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Fri Jul 16 18:17:07 2021
-# Process ID: 28309
-# Current directory: /home/headless/Desktop/ibex
+# Start of session at: Fri Jul 30 19:39:15 2021
+# Process ID: 27393
+# Current directory: /home/headless/common_folder/ibex
 # Command line: vivado
-# Log file: /home/headless/Desktop/ibex/vivado.log
-# Journal file: /home/headless/Desktop/ibex/vivado.jou
+# Log file: /home/headless/common_folder/ibex/vivado.log
+# Journal file: /home/headless/common_folder/ibex/vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project /home/headless/Desktop/ibex/build/lowrisc_ibex_top_artya7_0.1/synth-vivado/lowrisc_ibex_top_artya7_0.1.xpr
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-write_schematic -format pdf -orientation portrait /home/headless/Desktop/ibex/schematic.pdf
-write_schematic -format pdf -orientation portrait /home/id_schematic.pdf
-close_project
-open_project /home/headless/Desktop/ibex/build/lowrisc_ibex_top_artya7_0.1/synth-vivado/lowrisc_ibex_top_artya7_0.1.xpr
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-close_project
-open_project /home/headless/Desktop/ibex/build/lowrisc_ibex_top_artya7_0.1/synth-vivado/lowrisc_ibex_top_artya7_0.1.xpr
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-close_project
-open_project /home/headless/Desktop/ibex/build/lowrisc_ibex_top_artya7_0.1/synth-vivado/lowrisc_ibex_top_artya7_0.1.xpr
-close_project
-open_project /home/headless/Desktop/ibex/build/lowrisc_ibex_top_artya7_0.1/synth-vivado/lowrisc_ibex_top_artya7_0.1.xpr
-close_project
-open_project /home/headless/Desktop/ibex/build/lowrisc_ibex_top_artya7_0.1/synth-vivado/lowrisc_ibex_top_artya7_0.1.xpr
+open_project /home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/synth-vivado/lowrisc_ibex_top_artya7_0.1.xpr
 synth_design -rtl -rtl_skip_mlo -name rtl_1
 close_design
-open_run impl_1
+open_run synth_1 -name synth_1
+show_objects -name custom_module [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
+show_objects -name custom_module [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
+show_objects -name custom_module [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
+show_objects -name custom_module [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
 close_design
 synth_design -rtl -rtl_skip_mlo -name rtl_1
-close_project
-open_project /home/headless/Desktop/ibex/build/lowrisc_ibex_top_artya7_0.1/synth-vivado/lowrisc_ibex_top_artya7_0.1.xpr
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-refresh_design
-reset_run synth_1
-launch_runs impl_1 -jobs 20
-wait_on_run impl_1
-close_design
-open_run impl_1
-close_design
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-close_project
