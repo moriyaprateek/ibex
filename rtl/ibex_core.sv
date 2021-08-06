@@ -679,10 +679,10 @@ module ibex_core import ibex_pkg::*; #(
       .custom_valid(custom_valid_ex),
       // .ram_data_ex_i(ram_data),
       // .ram_addr_out(ram_addr_out_ex),
-      .insert_bloom(insert_bloom),
-      .check_bloom(check_bloom),
-      .match_bloom(match_bloom),
-      .reset_bloom(reset_bloom),
+      // .insert_bloom(insert_bloom),
+      // .check_bloom(check_bloom),
+      // .match_bloom(match_bloom),
+      // .reset_bloom(reset_bloom),
 
       // ALU signal from ID stage
       .alu_operator_i           ( alu_operator_ex          ),
