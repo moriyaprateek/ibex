@@ -16,10 +16,10 @@ module custom_module(
 
 
 
-// logic insert_bloom;
-// logic check_bloom;
-// logic match_bloom;
-// logic reset_bloom;
+logic insert_bloom;
+logic check_bloom;
+logic match_bloom;
+logic reset_bloom;
 
 
 assign custom_op_temp = custom_op_ex; 
