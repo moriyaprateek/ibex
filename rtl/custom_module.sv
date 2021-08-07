@@ -63,16 +63,15 @@ begin
 
 end
 
-
-    Bloom bloom_i(
-    .data(register_data),
-    .clk(clk),
-    .insert(insert_bloom),
-    .check(check_bloom),
-    .match(match_bloom),
-    .reset(reset_bloom)
-);
    
+   Bloom bloom_i(
+       .clk(clk),
+       .insert(insert_bloom),
+       .data(register_data),
+       .check(check_bloom),
+       .reset(reset_bloom),
+       .match(match_bloom)
+   )
  
 
 
