@@ -145,7 +145,11 @@ assign custom_valid = custom_valid_ex;
     .custom_in_RS1(custom_in_RS1_i),
     .custom_in_RS2(custom_in_RS2_i),
     .clk(clk_i),
+<<<<<<< HEAD
     .custom_valid (custom_valid),
+=======
+    .custom_valid (custom_valid_ex),
+>>>>>>> 10f4ea9aadddbc3ff4b98c267c580a2f361da942
     // .insert_bloom(insert_bloom),
     // .check_bloom(check_bloom),
     // .match_bloom(match_bloom),

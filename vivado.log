@@ -721,6 +721,7 @@ RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Mem
 169 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
 synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 8263.117 ; gain = 188.848 ; free physical = 462951 ; free virtual = 503757
+<<<<<<< HEAD
 close_design
 open_run impl_1
 ERROR: [Common 17-49] Internal Data Exception: Design::refreshDesign : Run checkpoint '/home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/synth-vivado/lowrisc_ibex_top_artya7_0.1.runs/impl_1/top_artya7_routed.dcp' does not exist. Cannot open run.
@@ -803,3 +804,5 @@ launch_runs synth_1 -jobs 2
 Run output will be captured here: /home/headless/common_folder/ibex/build/lowrisc_ibex_top_artya7_0.1/synth-vivado/lowrisc_ibex_top_artya7_0.1.runs/synth_1/runme.log
 exit
 INFO: [Common 17-206] Exiting Vivado at Mon Aug  2 07:35:28 2021...
+=======
+>>>>>>> 10f4ea9aadddbc3ff4b98c267c580a2f361da942

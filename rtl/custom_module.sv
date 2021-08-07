@@ -23,6 +23,12 @@ logic reset_bloom;
 
 
 
+logic insert_bloom;
+logic check_bloom;
+logic match_bloom;
+logic reset_bloom;
+
+
 assign custom_op_temp = custom_op_ex; 
 assign register_data[7:0] = custom_in_RS1[7:0];
 
