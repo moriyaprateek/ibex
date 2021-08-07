@@ -1,19 +1,19 @@
-module comparator(clk,check,gen_bloom,bloom_filter,match);
-		parameter d_size = 8;
-		parameter bl_size = 16;
-		input[bl_size-1:0] gen_bloom,bloom_filter;
-		input clk,check;
-		output reg match;
-		reg match_1 = 1'b1;
-		integer i;
-		always@(negedge clk)
-		begin
-			if(check ==1)begin
-				for(i =0 ; i < bl_size;i = i+1)begin
-					if(gen_bloom[i] == 1'b1)
-					match_1 <= match_1 & bloom_filter[i];
-				end
-				match <= match_1;
-			end
-		end
-	endmodule
+module comparator #(parameter d_size, bl_size, hash_size) (check, bloom, clk, hash, match);
+    input logic clk, check;
+    input logic [bl_size - 1: 0] bloom;
+    input logic [hash_size - 1: 0]hash;
+    output logic match;
+    
+    logic [bl_size - 1:0] temp;
+    int sum = 0;
+    always @(posedge clk) begin
+        temp = bloom | hash;
+
+        for(int i = 0; i < bl_size; i++) begin
+            sum += temp[i];
+        end
+        if(sum == 3)begin
+            match = 1;
+        end
+    end
+endmodule
