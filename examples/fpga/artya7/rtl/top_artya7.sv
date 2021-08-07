@@ -41,8 +41,8 @@ module top_artya7 (
   logic        mem_rvalid;
   logic [31:0] mem_rdata;
 
-  // logic custom_enable;
-  // logic custom_valid;
+  (* dont_touch = "true" *) logic custom_enable;
+  (* dont_touch = "true" *) logic custom_valid;
 
   ibex_top #(
      .RegFile(ibex_pkg::RegFileFPGA),
@@ -66,9 +66,8 @@ module top_artya7 (
      .instr_addr_o          (instr_addr),
      .instr_rdata_i         (instr_rdata),
      .instr_err_i           ('b0),
-    //  .custom_en_ex(custom_enable),
-    //  .custom_valid_ex(custom_valid),
-    //  .custom_data_ex(custom_data),
+     .custom_enable(custom_enable),
+     .custom_valid(custom_valid),
 
      .data_req_o            (data_req),
      .data_gnt_i            (data_gnt),

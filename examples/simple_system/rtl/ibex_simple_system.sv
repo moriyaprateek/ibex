@@ -131,6 +131,10 @@ module ibex_simple_system (
   assign device_err[Ram] = 1'b0;
   assign device_err[SimCtrl] = 1'b0;
 
+  //Custom signals for simple system test
+  logic custom_enable;
+  logic custom_valid;
+
   bus #(
     .NrDevices    ( NrDevices ),
     .NrHosts      ( NrHosts   ),
@@ -198,8 +202,8 @@ module ibex_simple_system (
       .instr_addr_o          (instr_addr),
       .instr_rdata_i         (instr_rdata),
       .instr_err_i           (instr_err),
-      // .custom_en_ex          (custom_en_ex),
-      // .custom_valid_ex       (custom_valid_ex),
+      .custom_enable         (custom_enable),
+      .custom_valid          (custom_valid),
 
       .data_req_o            (host_req[CoreD]),
       .data_gnt_i            (host_gnt[CoreD]),

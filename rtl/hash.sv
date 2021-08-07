@@ -18,7 +18,7 @@ module hash(clk,reset,insert,check,data,gen_bloom);
 			1'b1: begin
 				for(i =0;i<3;i=i+1)begin
 					temp_pr[i] <= hash_key[i]*data;
-					temp[i] <= (temp_pr[i][(2*d_size)-1:(d_size-1)])/(2**4);
+					temp[i] <= (temp_pr[i][(2*d_size)-1:(d_size)])   /(2**4);
 					gen_bloom[temp[i]] <= 1'b1;
 				end
 			end

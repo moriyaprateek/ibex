@@ -25,10 +25,10 @@ ibex:
     rtl/ibex_core.sv,
     shared/rtl/prim_assert.sv,
     rtl/custom_module.sv,
-    bloom/Bloom.v,
-    bloom/add.v,
-    bloom/comparator.v,
-    bloom/hash.v,
+    bloom/Bloom.sv,
+    bloom/add.sv,
+    bloom/comparator.sv,
+    bloom/hash.sv,
   ]
 ibex_vip_rtl:
   targets: [

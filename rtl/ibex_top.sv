@@ -50,6 +50,8 @@ module ibex_top #(
     output logic [31:0]                  instr_addr_o,
     input  logic [31:0]                  instr_rdata_i,
     input  logic                         instr_err_i,
+    output logic                         custom_valid,
+    output logic                         custom_enable,
 
     // Data memory interface
     output logic                         data_req_o,
@@ -157,8 +159,8 @@ module ibex_top #(
   // logic custom_en_ex;
   // logic custom_valid_ex;
   //Custom logic signals
-  logic custom_enable;
-  logic custom_valid;
+  // logic custom_enable;
+  // logic custom_valid;
 
 
 
