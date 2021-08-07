@@ -38,7 +38,7 @@ filesets:
       - rtl/custom_module.sv
       - rtl/Bloom.sv
       - rtl/comparator.sv
-      - rtl/hash_block.sv
+      - rtl/hash.sv
     file_type: systemVerilogSource
 
   files_lint_verilator:
