@@ -219,6 +219,7 @@ module ibex_id_stage #(
   logic        stall_ld_hz;
   logic        stall_mem;
   logic        stall_multdiv;
+  logic stall_custom;
   logic        stall_branch;
   logic        stall_jump;
   logic        stall_id;
