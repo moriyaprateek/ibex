@@ -15,13 +15,6 @@ module custom_module(
 (* dont_touch = "true" *) reg [31:0] register_data;
 
 
-logic insert_bloom;
-logic check_bloom;
-logic match_bloom;
-logic reset_bloom;
-
-
-
 
 logic insert_bloom;
 logic check_bloom;
@@ -63,16 +56,15 @@ begin
 
 end
 
-
-    Bloom bloom_i(
-    .data(register_data),
-    .clk(clk),
-    .insert(insert_bloom),
-    .check(check_bloom),
-    .match(match_bloom),
-    .reset(reset_bloom)
-);
    
+   Bloom bloom_i(
+       .clk(clk),
+       .insert(insert_bloom),
+       .data(register_data),
+       .check(check_bloom),
+       .reset(reset_bloom),
+       .match(match_bloom)
+   );
  
 
 

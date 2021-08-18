@@ -1,42 +1,35 @@
-module Bloom(data,clk,insert,check,match,reset);
-	parameter d_size = 8;
-	parameter bl_size = 32;
-	input logic clk,insert,check,reset;
-	input logic [d_size:0] data;
-	reg[bl_size-1:0] gen_bloom,bloom_filter,b;
-	wire[bl_size-1:0] gen_bl,bloom_fl,e;
-	output match;
-	
-	//assign gen_bloom = gen_bl;
-	//assign bloom_filter = bloom_fl;
-	
-	hash #(d_size,bl_size) 
-	hash_block(.clk(clk),
-				.reset(reset),
-				.insert(insert),
-				.check(check),
-				.data(data),
-				.gen_bloom(gen_bl));
-	
-	//add#(bl_size) a1(bloom_fl,gen_bl,bloom_fl);
-	always@(negedge clk )
-	begin
-	
-	bloom_filter <= gen_bl|bloom_filter;
-	if(reset)begin
-	bloom_filter <= 0;
-	end
-	
-	end
-	
-	
-	assign bloom_fl = bloom_filter;
-	comparator #(d_size,bl_size) 
-		comparator_block(.clk(clk),.check(check),.gen_bloom(gen_bl),.bloom_filter(bloom_fl),.match(match));
-		
 
-	//gen_bloom <= gen_bl;
-	
+module Bloom(clk, insert, data, check, reset, match);
+    parameter d_size = 32;
+    parameter bl_size = 32; //2^^5
+    parameter hash_size = 5;
+    input insert, check,  reset, clk;
+    input [d_size - 1: 0] data;
+    output match;
 
-endmodule 
+    reg [bl_size - 1:0]bloom;
+    logic [hash_size - 1: 0] bl_out;
 
+    hash#(d_size, bl_size, hash_size) hash_block (
+        .clk(clk),
+        .data(data),
+        .insert(insert),
+        .bl_out(bl_out));
+        
+    always@(posedge clk) begin
+        bloom[bl_out] = 1;
+        if(reset == 1) begin
+            bloom = 0;
+        end    
+    end 
+    
+    comparator #(d_size, bl_size, hash_size) comparator_ting (
+        .clk(clk),
+        .hash(bl_out),
+        .check(check),
+        .bloom(bloom),
+        .match(match)
+    );
+    
+    
+endmodule

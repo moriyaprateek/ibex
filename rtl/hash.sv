@@ -1,34 +1,20 @@
-module hash(clk,reset,insert,check,data,gen_bloom);
-	parameter d_size =8;
-	parameter bl_size = 16;
-	input clk,reset,insert,check;
-	input[d_size-1:0] data;
-	output reg[bl_size-1:0] gen_bloom;
-	reg[d_size-1:0] hash_key[2:0], temp[2:0];
-	reg[(2*d_size-1):0] temp_pr[2:0];
-	integer i;
-	always@(negedge clk or posedge reset)
-		begin
-			gen_bloom <= 0;
-			temp[0] <= 0;temp[1] <= 0;temp[2] <= 0;
-			if(reset)begin
-				gen_bloom <= 0;
-			end
-			case(insert)
-			1'b1: begin
-				for(i =0;i<3;i=i+1)begin
-					temp_pr[i] <= hash_key[i]*data;
-					temp[i] <= (temp_pr[i][(2*d_size)-1:(d_size)])   /(2**4);
-					gen_bloom[temp[i]] <= 1'b1;
-				end
-			end
-			1'b0:gen_bloom <=0;
-			endcase
-		end
+module hash #(parameter d_size, bl_size, hash_size) (clk, data, insert, bl_out);
+    input logic insert, clk;
+    input logic [d_size - 1:0] data;
+    output logic [hash_size - 1:0] bl_out;
+    
+    always@(posedge clk) begin
+        
+        if(insert == 1) begin
+        bl_out = 2166136261;
+            for(int i = 0; i < d_size/8; i++)begin
+                bl_out ^= data[i*8 +: 8];
+                bl_out *= 16777619;
+                
+            end
+        end
+    end
+    
+
 endmodule
-					
-					
-				
-	
-	
-		
+

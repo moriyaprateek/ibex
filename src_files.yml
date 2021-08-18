@@ -26,9 +26,8 @@ ibex:
     shared/rtl/prim_assert.sv,
     rtl/custom_module.sv,
     bloom/Bloom.sv,
-    bloom/add.sv,
     bloom/comparator.sv,
-    bloom/hash.sv,
+    bloom/hash_block.sv,
   ]
 ibex_vip_rtl:
   targets: [

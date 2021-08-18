@@ -37,7 +37,6 @@ filesets:
       - rtl/ibex_core.sv
       - rtl/custom_module.sv
       - rtl/Bloom.sv
-      - rtl/add.sv
       - rtl/comparator.sv
       - rtl/hash.sv
     file_type: systemVerilogSource
