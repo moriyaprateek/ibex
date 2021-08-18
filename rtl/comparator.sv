@@ -5,14 +5,8 @@ module comparator #(parameter d_size, bl_size, hash_size) (check, bloom, clk, ha
     output logic match;
     
     logic [bl_size - 1:0] temp;
-    int sum = 0;
     always @(posedge clk) begin
-        temp = bloom | hash;
-
-        for(int i = 0; i < bl_size; i++) begin
-            sum += temp[i];
-        end
-        if(sum == 3)begin
+        if(bloom[hash] == 1) begin
             match = 1;
         end
     end

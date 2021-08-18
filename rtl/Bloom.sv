@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 
 module Bloom(clk, insert, data, check, reset, match);
     parameter d_size = 32;
@@ -22,7 +23,7 @@ module Bloom(clk, insert, data, check, reset, match);
             bloom = 0;
         end    
     end 
-    
+    //protik is hoS
     comparator #(d_size, bl_size, hash_size) comparator_ting (
         .clk(clk),
         .hash(bl_out),
