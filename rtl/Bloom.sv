@@ -1,5 +1,3 @@
-`timescale 1ns / 1ps
-
 module Bloom(clk, insert, data, check, reset, match);
     parameter d_size = 32;
     parameter bl_size = 32; //2^^5
