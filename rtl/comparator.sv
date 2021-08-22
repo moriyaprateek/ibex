@@ -6,7 +6,7 @@ module comparator #(parameter d_size, bl_size, hash_size) (check, bloom, clk, ha
     
     logic [bl_size - 1:0] temp;
     always @(posedge clk) begin
-        if(bloom[hash] == 1) begin
+        if(bloom[31 - hash] == 1) begin
             match = 1;
         end
     end
