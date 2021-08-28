@@ -32,12 +32,12 @@ int main(int argc, char **argv) {
   
 
 
-int result = (bloom_insert(12, 4));
+int result = (bloom_insert(12, 4)* bloom_insert(2, 4) * bloom_insert(3, 4));
 
 int result2 = (bloom_reset(1, 2) );
 
 
-int result3 = (bloom_check(12,1));
+int result3 = (bloom_check(2,1));
 
 
   return result * result2 * result3;
