@@ -1,5 +1,3 @@
-
-
 module Bloom(clk, insert, data, check, reset, match);
     parameter d_size = 32;
     parameter bl_size = 32; //2^^5
@@ -10,15 +8,12 @@ module Bloom(clk, insert, data, check, reset, match);
 
     reg [bl_size - 1:0]bloom;
     logic [hash_size - 1: 0] bl_out;
-    logic [hash_size - 1: 0] hash;
 
     hash#(d_size, bl_size, hash_size) hash_block (
         .clk(clk),
         .data(data),
         .insert(insert),
-        .check(check),
-        .bl_out(bl_out),
-        .hash(hash));
+        .bl_out(bl_out));
         
     always@(posedge clk) begin
         bloom[bl_out] = 1;
@@ -29,7 +24,7 @@ module Bloom(clk, insert, data, check, reset, match);
     //protik is hoS
     comparator #(d_size, bl_size, hash_size) comparator_ting (
         .clk(clk),
-        .hash(hash),
+        .hash(bl_out),
         .check(check),
         .bloom(bloom),
         .match(match)
