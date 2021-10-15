@@ -642,7 +642,9 @@ module ibex_id_stage #(
   assign lsu_req         = instr_executing ? data_req_allowed & lsu_req_dec  : 1'b0;
   assign mult_en_id      = instr_executing ? mult_en_dec                     : 1'b0;
   assign div_en_id       = instr_executing ? div_en_dec                      : 1'b0;
-  assign custom_en_id    = instr_executing ? custom_en_dec                   : 1'b0; //CUSTOM 
+  assign custom_en_id    = instr_executing ? custom_en_dec                   : 1'b0; 
+
+  //If instruction is executing, custom_en_id = custom_en_dec
 
 
   assign lsu_req_o               = lsu_req;
@@ -782,7 +784,7 @@ module ibex_id_stage #(
     id_fsm_d                = id_fsm_q;
     rf_we_raw               = rf_we_dec;
     stall_multdiv           = 1'b0;
-    // stall_custom            = 1'b0;
+    stall_custom            = 1'b0; //Stall if a custom instruction operation is happening.
     stall_jump              = 1'b0;
     stall_branch            = 1'b0;
     stall_alu               = 1'b0;
@@ -845,13 +847,13 @@ module ibex_id_stage #(
               id_fsm_d      = MULTI_CYCLE;
               rf_we_raw     = 1'b0;
             end
+    //Custom stall 
+            custom_en_dec: begin
+              id_fsm_d = MULTI_CYCLE;
+              stall_custom  = 1'b1;
 
-            // custom_en_dec: begin
-              
-            //   stall_custom  = 1'b1;
 
-
-            // end
+            end
             default: begin
               id_fsm_d      = FIRST_CYCLE;
             end
@@ -869,6 +871,7 @@ module ibex_id_stage #(
             stall_multdiv   = multdiv_en_dec;
             stall_branch    = branch_in_dec;
             stall_jump      = jump_in_dec;
+            stall_custom    = custom_en_dec;
           end
         end
 
